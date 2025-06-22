@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+
+# Virtual environments
+.venv/
+env/
+ENV/
+env.bak/
+.venv.bak/
+.env
+
+# Django
+*.sqlite3
+*.log
+db.sqlite3
+*.pot
+*.mo
+*.log
+*.pid
+*.gz
+*.db
+
+# Django static/media (if not versioned)
+static/
+media/
+mediafiles/
+media/avatars/
+
+# Migrations — только автогенерируемые
+**/migrations/**/__pycache__/
+**/migrations/**/000*.py
+
+# Secrets
+.env
+.env.*
+secrets.json
+
+# VS Code / PyCharm / JetBrains
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Swagger / Spectacular schema
+*.schema.json
+schema.yml
+schema.json
+.openapi/
+
+# Coverage & Testing
+htmlcov/
+.coverage
+coverage.xml
+.pytest_cache/
+.tox/
+junit*.xml
+
+# Type checkers
+.mypy_cache/
+.pyright/
+.dmypy.json
+
+# Packaging / Build
+build/
+dist/
+*.egg-info/
+.eggs/

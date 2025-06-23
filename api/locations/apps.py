@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class OrganizationsConfig(AppConfig):
+class LocationsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'api.organizations'
+    name = 'api.locations'

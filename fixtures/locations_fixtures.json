@@ -1,0 +1,280 @@
+[
+  {
+    "model": "locations.country",
+    "pk": 1,
+    "fields": {
+      "name": "Kazakhstan"
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 1,
+    "fields": {
+      "name": "Almaty",
+      "country": 1
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 2,
+    "fields": {
+      "name": "Astana",
+      "country": 1
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 3,
+    "fields": {
+      "name": "Shymkent",
+      "country": 1
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 4,
+    "fields": {
+      "name": "Karaganda",
+      "country": 1
+    }
+  },
+  {
+    "model": "locations.country",
+    "pk": 2,
+    "fields": {
+      "name": "Russia"
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 5,
+    "fields": {
+      "name": "Moscow",
+      "country": 2
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 6,
+    "fields": {
+      "name": "Saint Petersburg",
+      "country": 2
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 7,
+    "fields": {
+      "name": "Novosibirsk",
+      "country": 2
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 8,
+    "fields": {
+      "name": "Kazan",
+      "country": 2
+    }
+  },
+  {
+    "model": "locations.country",
+    "pk": 3,
+    "fields": {
+      "name": "Uzbekistan"
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 9,
+    "fields": {
+      "name": "Tashkent",
+      "country": 3
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 10,
+    "fields": {
+      "name": "Samarkand",
+      "country": 3
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 11,
+    "fields": {
+      "name": "Bukhara",
+      "country": 3
+    }
+  },
+  {
+    "model": "locations.country",
+    "pk": 4,
+    "fields": {
+      "name": "Kyrgyzstan"
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 12,
+    "fields": {
+      "name": "Bishkek",
+      "country": 4
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 13,
+    "fields": {
+      "name": "Osh",
+      "country": 4
+    }
+  },
+  {
+    "model": "locations.country",
+    "pk": 5,
+    "fields": {
+      "name": "Tajikistan"
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 14,
+    "fields": {
+      "name": "Dushanbe",
+      "country": 5
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 15,
+    "fields": {
+      "name": "Khujand",
+      "country": 5
+    }
+  },
+  {
+    "model": "locations.country",
+    "pk": 6,
+    "fields": {
+      "name": "Turkmenistan"
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 16,
+    "fields": {
+      "name": "Ashgabat",
+      "country": 6
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 17,
+    "fields": {
+      "name": "Turkmenabat",
+      "country": 6
+    }
+  },
+  {
+    "model": "locations.country",
+    "pk": 7,
+    "fields": {
+      "name": "Belarus"
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 18,
+    "fields": {
+      "name": "Minsk",
+      "country": 7
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 19,
+    "fields": {
+      "name": "Gomel",
+      "country": 7
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 20,
+    "fields": {
+      "name": "Vitebsk",
+      "country": 7
+    }
+  },
+  {
+    "model": "locations.country",
+    "pk": 8,
+    "fields": {
+      "name": "Armenia"
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 21,
+    "fields": {
+      "name": "Yerevan",
+      "country": 8
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 22,
+    "fields": {
+      "name": "Gyumri",
+      "country": 8
+    }
+  },
+  {
+    "model": "locations.country",
+    "pk": 9,
+    "fields": {
+      "name": "Azerbaijan"
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 23,
+    "fields": {
+      "name": "Baku",
+      "country": 9
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 24,
+    "fields": {
+      "name": "Ganja",
+      "country": 9
+    }
+  },
+  {
+    "model": "locations.country",
+    "pk": 10,
+    "fields": {
+      "name": "Moldova"
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 25,
+    "fields": {
+      "name": "Chisinau",
+      "country": 10
+    }
+  },
+  {
+    "model": "locations.city",
+    "pk": 26,
+    "fields": {
+      "name": "Tiraspol",
+      "country": 10
+    }
+  }
+]

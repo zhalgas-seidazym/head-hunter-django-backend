@@ -29,6 +29,7 @@ urlpatterns = [
 
     path('api/auth/', include('api.auths.urls')),
     path('api/users/', include('api.users.urls')),
+    path('api/locations/', include('api.locations.urls')),
 
 
     # OpenAPI JSON schema

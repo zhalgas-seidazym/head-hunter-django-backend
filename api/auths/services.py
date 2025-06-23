@@ -4,10 +4,11 @@ import uuid
 from django.core.cache import cache
 from rest_framework.exceptions import ValidationError, NotFound
 from rest_framework_simplejwt.tokens import RefreshToken
+from django.contrib.auth import get_user_model
 
 from api.common.services import send_email_async
-from api.users.models import User
 
+User = get_user_model()
 
 class AuthService:
 

@@ -2,6 +2,8 @@ from rest_framework.viewsets import GenericViewSet
 from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from drf_spectacular.utils import extend_schema_view, extend_schema
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from api.auths.serializers import SendOtpSerializer, VerifyOtpSerializer, RegisterSerializer
 from api.auths.services import AuthService
@@ -9,6 +11,26 @@ from api.common.mixins import ActionSerializerMixin
 from api.users.models import User
 
 
+@extend_schema_view(
+    post=extend_schema(tags=["Authentication"], summary="Login and get JWT token")
+)
+class CustomTokenObtainPairView(TokenObtainPairView):
+    pass
+
+
+@extend_schema_view(
+    post=extend_schema(tags=["Authentication"], summary="Refresh JWT token")
+)
+class CustomTokenRefreshView(TokenRefreshView):
+    pass
+
+
+@extend_schema_view(
+    send_otp=extend_schema(tags=["Authentication"], summary="To get verification code to email"),
+    verify_otp=extend_schema(tags=["Authentication"], summary="Verify code"),
+    token_by_otp=extend_schema(tags=["Authentication"], summary="Get jwt token by verifying OTP"),
+    register=extend_schema(tags=["Authentication"], summary="Register"),
+)
 class AuthView(ActionSerializerMixin, GenericViewSet):
     serializers = {
         "send_otp": SendOtpSerializer,

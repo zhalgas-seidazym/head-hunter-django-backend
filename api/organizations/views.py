@@ -1,3 +1,16 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from api.common.mixins import *
+
+
+class OrganizationView(viewsets.ModelViewSet, ActionSerializerMixin, ActionPermissionMixin):
+    serializers = {
+
+    }
+    permissions = {
+
+    }
+
+
+
+

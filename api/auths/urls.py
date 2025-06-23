@@ -5,13 +5,13 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
-from .views import AuthView
+from .views import AuthView, CustomTokenObtainPairView, CustomTokenRefreshView
 
 router = DefaultRouter()
 router.register(r'', AuthView, basename='auth')
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),      # Login
-    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),     # Refresh
+    path('api/token/', CustomTokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', CustomTokenRefreshView.as_view(), name='token_refresh'),
 ]

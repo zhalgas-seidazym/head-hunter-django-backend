@@ -73,7 +73,8 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'api.common',
     'api.users',
-    'api.auths'
+    'api.auths',
+    'api.organizations',
 ]
 
 MIDDLEWARE = [

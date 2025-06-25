@@ -7,10 +7,17 @@ from api.common.enums import OrganizationRole, ORGANIZATION_ROLE_RANKS, Organiza
 
 User = get_user_model()
 
+class IndustryGroup(models.Model):
+    name = models.CharField(max_length=255)
+
+class Industry(models.Model):
+    name = models.CharField(max_length=255)
+    group = models.ForeignKey(IndustryGroup, on_delete=models.CASCADE, related_name="industries")
+
 class Organization(BaseModel):
     name = models.CharField(max_length=255, unique=True)
     description = models.TextField(blank=True, null=True)
-    industry = models.CharField(max_length=100, blank=True, null=True)
+    industry = models.ManyToManyField("Industry", blank=True, related_name="organizations")
     website = models.URLField(blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     phone = models.CharField(max_length=20, blank=True, null=True)

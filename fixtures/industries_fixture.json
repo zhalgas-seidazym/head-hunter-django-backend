@@ -1,0 +1,2580 @@
+[
+  {
+    "model": "organizations.industrygroup",
+    "pk": 5,
+    "fields": {
+      "name": "Перевозки, логистика, склад, ВЭД"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 461,
+    "fields": {
+      "name": "Авиаперевозки",
+      "group": 5
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 462,
+    "fields": {
+      "name": "Автомобильные перевозки",
+      "group": 5
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 463,
+    "fields": {
+      "name": "Железнодорожные перевозки",
+      "group": 5
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 464,
+    "fields": {
+      "name": "Морские, речные перевозки",
+      "group": 5
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 465,
+    "fields": {
+      "name": "Транспортно-логистические комплексы, порты (воздушный, водный, железнодорожный)",
+      "group": 5
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 466,
+    "fields": {
+      "name": "Складские услуги",
+      "group": 5
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 467,
+    "fields": {
+      "name": "Курьерская, почтовая доставка",
+      "group": 5
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 468,
+    "fields": {
+      "name": "ВЭД, таможенное оформление",
+      "group": 5
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 7,
+    "fields": {
+      "name": "Информационные технологии, системная интеграция, интернет"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 538,
+    "fields": {
+      "name": "Интернет-провайдер",
+      "group": 7
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 539,
+    "fields": {
+      "name": "Системная интеграция,  автоматизации технологических и бизнес-процессов предприятия, ИТ-консалтинг",
+      "group": 7
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 540,
+    "fields": {
+      "name": "Разработка программного обеспечения",
+      "group": 7
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 541,
+    "fields": {
+      "name": "Интернет-компания (поисковики, платежные системы, соц.сети, информационно-познавательные и развлекательные ресурсы, продвижение сайтов и прочее)",
+      "group": 7
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 8,
+    "fields": {
+      "name": "Электроника, приборостроение, бытовая техника, компьютеры и оргтехника"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 478,
+    "fields": {
+      "name": "Бытовая техника, электроника, климатическое оборудование (производство)",
+      "group": 8
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 479,
+    "fields": {
+      "name": "Бытовая техника, электроника, климатическое оборудование (монтаж, сервис, ремонт)",
+      "group": 8
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 480,
+    "fields": {
+      "name": "Бытовая техника, электроника, климатическое оборудование (продвижение, оптовая торговля)",
+      "group": 8
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 481,
+    "fields": {
+      "name": "Промышленное, бытовое электрооборудование и электротехника (производство)",
+      "group": 8
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 482,
+    "fields": {
+      "name": "Промышленное, бытовое электрооборудование и электротехника (монтаж, сервис, ремонт)",
+      "group": 8
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 483,
+    "fields": {
+      "name": "Промышленное, бытовое электрооборудование и электротехника (продвижение, оптовая торговля)",
+      "group": 8
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 484,
+    "fields": {
+      "name": "Электронно-вычислительная, оптическая, контрольно-измерительная техника, радиоэлектроника, автоматика (производство)",
+      "group": 8
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 485,
+    "fields": {
+      "name": "Электронно-вычислительная, оптическая, контрольно-измерительная техника, радиоэлектроника, автоматика (монтаж, сервис, ремонт)",
+      "group": 8
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 486,
+    "fields": {
+      "name": "Электронно-вычислительная, оптическая, контрольно-измерительная техника, радиоэлектроника, автоматика (продвижение, оптовая торговля)",
+      "group": 8
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 9,
+    "fields": {
+      "name": "Телекоммуникации, связь"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 399,
+    "fields": {
+      "name": "Мобильная связь",
+      "group": 9
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 400,
+    "fields": {
+      "name": "Фиксированная связь",
+      "group": 9
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 401,
+    "fields": {
+      "name": "Оптоволоконная связь",
+      "group": 9
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 402,
+    "fields": {
+      "name": "Спутниковая связь",
+      "group": 9
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 11,
+    "fields": {
+      "name": "СМИ, маркетинг, реклама, BTL, PR, дизайн, продюсирование"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 452,
+    "fields": {
+      "name": "Издательская деятельность",
+      "group": 11
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 453,
+    "fields": {
+      "name": "Производство мультимедиа, контента, редакторская деятельность",
+      "group": 11
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 454,
+    "fields": {
+      "name": "Распространение телепрограмм, кино (кабельное телевидение)",
+      "group": 11
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 455,
+    "fields": {
+      "name": "Киностудии и студии звукозаписи",
+      "group": 11
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 456,
+    "fields": {
+      "name": "Теле- и радиовещание",
+      "group": 11
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 457,
+    "fields": {
+      "name": "Продюсерский центр",
+      "group": 11
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 458,
+    "fields": {
+      "name": "Распространение мультимедиа и печатной продукции",
+      "group": 11
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 459,
+    "fields": {
+      "name": "Маркетинговые, рекламные, BTL, дизайнерские, Event-, PR-агентства, организация выставок",
+      "group": 11
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 460,
+    "fields": {
+      "name": "Производство печатной, полиграфической продукции",
+      "group": 11
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 685,
+    "fields": {
+      "name": "Производство и продажа рекламно-сувенирной продукции",
+      "group": 11
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 13,
+    "fields": {
+      "name": "Строительство, недвижимость, эксплуатация, проектирование"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 654,
+    "fields": {
+      "name": "Девелопмент",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 655,
+    "fields": {
+      "name": "Строительство объектов нефтегазовой отрасли",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 656,
+    "fields": {
+      "name": "Строительство объектов металлургической отрасли",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 657,
+    "fields": {
+      "name": "Строительство объектов телекоммуникационной отрасли",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 658,
+    "fields": {
+      "name": "Строительство энергетическое",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 659,
+    "fields": {
+      "name": "Строительство промышленное",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 660,
+    "fields": {
+      "name": "Строительство коммерческих объектов (торговые площади, офисные здания)",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 661,
+    "fields": {
+      "name": "Строительство жилищное",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 662,
+    "fields": {
+      "name": "Строительство дорожное и инфраструктурное",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 663,
+    "fields": {
+      "name": "Архитектура, проектирование",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 664,
+    "fields": {
+      "name": "Управление и эксплуатация недвижимости",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 665,
+    "fields": {
+      "name": "Консалтинг, оценка в недвижимости",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 666,
+    "fields": {
+      "name": "Агентские услуги в недвижимости",
+      "group": 13
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 15,
+    "fields": {
+      "name": "Автомобильный бизнес"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 542,
+    "fields": {
+      "name": "Легковые, грузовые автомобили, мототехника, автобусы, троллейбусы (производство)",
+      "group": 15
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 543,
+    "fields": {
+      "name": "Легковые, грузовые автомобили, мототехника, автобусы, троллейбусы (продвижение, оптовая торговля)",
+      "group": 15
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 544,
+    "fields": {
+      "name": "Розничная торговля автомобилями (дилерский центр)",
+      "group": 15
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 545,
+    "fields": {
+      "name": "Автокомпоненты, запчасти (производство)",
+      "group": 15
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 546,
+    "fields": {
+      "name": "Автокомпоненты, запчасти, шины (продвижение, оптовая торговля)",
+      "group": 15
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 547,
+    "fields": {
+      "name": "Автозапчасти, шины (розничная торговля)",
+      "group": 15
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 548,
+    "fields": {
+      "name": "Техническое обслуживание, ремонт автомобилей",
+      "group": 15
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 549,
+    "fields": {
+      "name": "Финансовые услуги (кэптивные банки и лизинговые компании)",
+      "group": 15
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 19,
+    "fields": {
+      "name": "Лесная промышленность, деревообработка"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 620,
+    "fields": {
+      "name": "Деревообработка (производство)",
+      "group": 19
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 621,
+    "fields": {
+      "name": "Продукция деревообработки (продвижение, оптовая торговля)",
+      "group": 19
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 622,
+    "fields": {
+      "name": "Столярно-строительные изделия (производство)",
+      "group": 19
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 623,
+    "fields": {
+      "name": "Столярно-строительные изделия (продвижение, оптовая торговля)",
+      "group": 19
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 624,
+    "fields": {
+      "name": "Целлюлозно-бумажное производство",
+      "group": 19
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 625,
+    "fields": {
+      "name": "Целлюлозно-бумажная продукция (продвижение, оптовая торговля)",
+      "group": 19
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 24,
+    "fields": {
+      "name": "Металлургия, металлообработка"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 633,
+    "fields": {
+      "name": "Черная металлургия (производство чугуна, стали, проката)",
+      "group": 24
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 634,
+    "fields": {
+      "name": "Продукция черной металлургии (продвижение, оптовая торговля)",
+      "group": 24
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 635,
+    "fields": {
+      "name": "Цветная металлургия (выплавка, металлопрокат)",
+      "group": 24
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 636,
+    "fields": {
+      "name": "Продукция цветной металлургии (продвижение, оптовая торговля)",
+      "group": 24
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 637,
+    "fields": {
+      "name": "Драгоценные, благородные и редкие металлы (производство)",
+      "group": 24
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 638,
+    "fields": {
+      "name": "Драгоценные, благородные и редкие металлы (продвижение, оптовая торговля)",
+      "group": 24
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 639,
+    "fields": {
+      "name": "Металлические изделия, металлоконструкции (производство)",
+      "group": 24
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 640,
+    "fields": {
+      "name": "Металлические изделия, металлоконструкции (продвижение, оптовая торговля)",
+      "group": 24
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 27,
+    "fields": {
+      "name": "Продукты питания"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 550,
+    "fields": {
+      "name": "Безалкогольные напитки (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 551,
+    "fields": {
+      "name": "Безалкогольные напитки (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 552,
+    "fields": {
+      "name": "Вино (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 553,
+    "fields": {
+      "name": "Ликероводочная продукция (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 554,
+    "fields": {
+      "name": "Пиво (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 555,
+    "fields": {
+      "name": "Алкогольные напитки (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 556,
+    "fields": {
+      "name": "Детское питание (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 557,
+    "fields": {
+      "name": "Детское питание (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 558,
+    "fields": {
+      "name": "Кондитерские изделия (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 559,
+    "fields": {
+      "name": "Кондитерские изделия (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 560,
+    "fields": {
+      "name": "Консервированная продукция (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 561,
+    "fields": {
+      "name": "Консервированная продукция (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 562,
+    "fields": {
+      "name": "Корма для животных (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 563,
+    "fields": {
+      "name": "Корма для животных (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 564,
+    "fields": {
+      "name": "Макаронные изделия (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 565,
+    "fields": {
+      "name": "Макаронные изделия (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 566,
+    "fields": {
+      "name": "Масложировая продукция (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 567,
+    "fields": {
+      "name": "Масложировая продукция (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 568,
+    "fields": {
+      "name": "Молочная продукция (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 569,
+    "fields": {
+      "name": "Молочная продукция (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 570,
+    "fields": {
+      "name": "Мука, крупы (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 571,
+    "fields": {
+      "name": "Мука, крупы (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 572,
+    "fields": {
+      "name": "Мясная продукция (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 573,
+    "fields": {
+      "name": "Мясная продукция (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 574,
+    "fields": {
+      "name": "Пищевые концентраты (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 575,
+    "fields": {
+      "name": "Пищевые концентраты (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 576,
+    "fields": {
+      "name": "Рыба и морепродукты (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 577,
+    "fields": {
+      "name": "Рыба и морепродукты (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 578,
+    "fields": {
+      "name": "Полуфабрикаты, в том числе замороженные (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 579,
+    "fields": {
+      "name": "Полуфабрикаты, в том числе замороженные  (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 580,
+    "fields": {
+      "name": "Снеки (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 581,
+    "fields": {
+      "name": "Снеки (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 582,
+    "fields": {
+      "name": "Сахар (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 583,
+    "fields": {
+      "name": "Сахар (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 584,
+    "fields": {
+      "name": "Свежие овощи, фрукты (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 585,
+    "fields": {
+      "name": "Хлебобулочные изделия (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 586,
+    "fields": {
+      "name": "Хлебобулочные изделия (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 587,
+    "fields": {
+      "name": "Чай, кофе (производство)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 588,
+    "fields": {
+      "name": "Чай, кофе (продвижение, оптовая торговля)",
+      "group": 27
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 29,
+    "fields": {
+      "name": "Сельское хозяйство"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 531,
+    "fields": {
+      "name": "Земледелие, растениеводство, животноводство",
+      "group": 29
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 532,
+    "fields": {
+      "name": "Рыболовство, рыбоводство",
+      "group": 29
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 533,
+    "fields": {
+      "name": "Сельскохозяйственная продукция (продвижение, оптовая торговля)",
+      "group": 29
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 33,
+    "fields": {
+      "name": "Тяжелое машиностроение"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 428,
+    "fields": {
+      "name": "Авиационная, вертолетная, аэрокосмическая промышленность",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 429,
+    "fields": {
+      "name": "Продукция авиационной, аэрокосмической, вертолетной промышленности (монтаж, сервис, ремонт)",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 430,
+    "fields": {
+      "name": "Продукция авиационной, аэрокосмической, вертолетной промышленности (продвижение, оптовая торговля)",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 431,
+    "fields": {
+      "name": "Двигатели (производство)",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 432,
+    "fields": {
+      "name": "Двигатели (монтаж, сервис, ремонт)",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 433,
+    "fields": {
+      "name": "Двигатели (продвижение, оптовая торговля)",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 434,
+    "fields": {
+      "name": "Железнодорожное машиностроение, вагоностроение",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 435,
+    "fields": {
+      "name": "Продукция железнодорожного машиностроения, вагоностроения (продвижение, оптовая торговля)",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 436,
+    "fields": {
+      "name": "Продукция железнодорожного машиностроения, вагоностроения (монтаж, сервис, ремонт)",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 437,
+    "fields": {
+      "name": "Судостроение",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 438,
+    "fields": {
+      "name": "Судоремонт",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 439,
+    "fields": {
+      "name": "Продукция судостроения (продвижение, оптовая торговля)",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 440,
+    "fields": {
+      "name": "Производство и ремонт военной техники, оборудования и вооружения",
+      "group": 33
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 34,
+    "fields": {
+      "name": "Химическое производство, удобрения"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 416,
+    "fields": {
+      "name": "Агрохимия (производство)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 417,
+    "fields": {
+      "name": "Агрохимия (продвижение, оптовая торговля)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 418,
+    "fields": {
+      "name": "Бетон, кирпич, стекло и прочие силикаты (производство)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 419,
+    "fields": {
+      "name": "Бетон, кирпич, стекло и прочие силикаты (продвижение, оптовая торговля)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 420,
+    "fields": {
+      "name": "Лакокрасочная продукция, сырье (производство)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 421,
+    "fields": {
+      "name": "Лакокрасочная продукция, сырье (продвижение, оптовая торговля)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 422,
+    "fields": {
+      "name": "Неорганическая химия (производство)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 423,
+    "fields": {
+      "name": "Неорганическая химия (продвижение, оптовая торговля)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 424,
+    "fields": {
+      "name": "Органическая химия (производство)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 425,
+    "fields": {
+      "name": "Органическая химия (продвижение, оптовая торговля)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 426,
+    "fields": {
+      "name": "Резина, пластмасса и прочее (производство)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 427,
+    "fields": {
+      "name": "Резина, пластмасса и прочее (продвижение, оптовая торговля)",
+      "group": 34
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 36,
+    "fields": {
+      "name": "Государственные организации"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 403,
+    "fields": {
+      "name": "Государственные организации",
+      "group": 36
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 37,
+    "fields": {
+      "name": "Общественная деятельность, партии, благотворительность, НКО"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 626,
+    "fields": {
+      "name": "Ассоциация в сфере культуры, искусства",
+      "group": 37
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 627,
+    "fields": {
+      "name": "Благотворительная организация",
+      "group": 37
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 628,
+    "fields": {
+      "name": "Общественная, политическая организация",
+      "group": 37
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 629,
+    "fields": {
+      "name": "Профессиональная, предпринимательская организация",
+      "group": 37
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 630,
+    "fields": {
+      "name": "Религиозная организация",
+      "group": 37
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 631,
+    "fields": {
+      "name": "Спортивная федерация",
+      "group": 37
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 632,
+    "fields": {
+      "name": "Фонд, грантодатель",
+      "group": 37
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 39,
+    "fields": {
+      "name": "Образовательные учреждения"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 441,
+    "fields": {
+      "name": "Научно-исследовательская, научная, академическая деятельность",
+      "group": 39
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 442,
+    "fields": {
+      "name": "Вуз, ссуз колледж, ПТУ",
+      "group": 39
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 443,
+    "fields": {
+      "name": "Школа, детский сад",
+      "group": 39
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 444,
+    "fields": {
+      "name": "Бизнес-образование",
+      "group": 39
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 445,
+    "fields": {
+      "name": "Повышение квалификации, переквалификация",
+      "group": 39
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 446,
+    "fields": {
+      "name": "Тренинговые компании",
+      "group": 39
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 447,
+    "fields": {
+      "name": "Автошкола",
+      "group": 39
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 448,
+    "fields": {
+      "name": "Обучение иностранным языкам",
+      "group": 39
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 449,
+    "fields": {
+      "name": "Обучение искусствам (рисование, пение, танцы, фото)",
+      "group": 39
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 450,
+    "fields": {
+      "name": "Спортивное обучение",
+      "group": 39
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 451,
+    "fields": {
+      "name": "Интернат, детский дом",
+      "group": 39
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 41,
+    "fields": {
+      "name": "Розничная торговля"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 511,
+    "fields": {
+      "name": "Розничная сеть (книги, игрушки, подарки, часы и прочее)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 512,
+    "fields": {
+      "name": "Розничная сеть (drogerie, товары повседневного спроса)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 513,
+    "fields": {
+      "name": "Розничная сеть (мебель)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 514,
+    "fields": {
+      "name": "Розничная сеть (товары для детей)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 515,
+    "fields": {
+      "name": "Розничная сеть (одежда, обувь, аксессуары)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 516,
+    "fields": {
+      "name": "Розничная сеть (парфюмерия, косметика)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 517,
+    "fields": {
+      "name": "Розничная сеть (продуктовая)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 518,
+    "fields": {
+      "name": "Розничная сеть (DIY и товары для дома)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 519,
+    "fields": {
+      "name": "Розничная сеть (мобильный ритейл)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 520,
+    "fields": {
+      "name": "Розничная сеть (спортивные товары)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 521,
+    "fields": {
+      "name": "Розничная сеть (электроника, бытовая техника)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 522,
+    "fields": {
+      "name": "Розничная сеть (ювелирные изделия)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 523,
+    "fields": {
+      "name": "Вендинг (торговля через автоматы)",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 524,
+    "fields": {
+      "name": "Зоомагазин",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 525,
+    "fields": {
+      "name": "Интернет-магазин",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 526,
+    "fields": {
+      "name": "Несетевая розница, мелкий опт",
+      "group": 41
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 42,
+    "fields": {
+      "name": "Товары народного потребления (непищевые)"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 589,
+    "fields": {
+      "name": "Бытовая химия, парфюмерия, косметика  (производство)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 590,
+    "fields": {
+      "name": "Бытовая химия, парфюмерия, косметика  (продвижение, оптовая торговля)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 591,
+    "fields": {
+      "name": "Канцтовары, расходные материалы (производство)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 592,
+    "fields": {
+      "name": "Канцтовары, расходные материалы (продвижение, оптовая торговля)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 593,
+    "fields": {
+      "name": "Мебель (производство)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 594,
+    "fields": {
+      "name": "Мебель (продвижение, оптовая торговля)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 595,
+    "fields": {
+      "name": "Одежда, обувь, аксессуары, текстиль (производство)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 596,
+    "fields": {
+      "name": "Одежда, обувь, аксессуары, текстиль  (продвижение, оптовая торговля)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 597,
+    "fields": {
+      "name": "Сантехника (производство)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 598,
+    "fields": {
+      "name": "Сантехника (продвижение, оптовая торговля)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 599,
+    "fields": {
+      "name": "Стройматериалы, сборные конструкции для ремонта и строительства (продвижение, оптовая торговля)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 600,
+    "fields": {
+      "name": "Стройматериалы, сборные конструкции для ремонта и строительства (производство, монтаж, сервис, ремонт)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 601,
+    "fields": {
+      "name": "Спортивные товары и оборудование (производство)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 602,
+    "fields": {
+      "name": "Спортивные товары и оборудование (продвижение, оптовая торговля)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 603,
+    "fields": {
+      "name": "Табак  (производство)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 604,
+    "fields": {
+      "name": "Табак  (продвижение, оптовая торговля)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 605,
+    "fields": {
+      "name": "Посуда, свет, товары для дома  (производство)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 606,
+    "fields": {
+      "name": "Посуда, свет, товары для дома  (продвижение, оптовая торговля)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 607,
+    "fields": {
+      "name": "Товары для детей (производство)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 608,
+    "fields": {
+      "name": "Товары для детей (продвижение, оптовая торговля)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 609,
+    "fields": {
+      "name": "Ювелирные изделия, бижутерия  (производство)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 610,
+    "fields": {
+      "name": "Ювелирные изделия, бижутерия  (продвижение, оптовая торговля)",
+      "group": 42
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 43,
+    "fields": {
+      "name": "Финансовый сектор"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 641,
+    "fields": {
+      "name": "Аудит, управленческий учет, финансово-юридический консалтинг",
+      "group": 43
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 642,
+    "fields": {
+      "name": "Услуги по ведению бухгалтерского и налогового учета, расчет заработной платы",
+      "group": 43
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 643,
+    "fields": {
+      "name": "Коллекторская деятельность",
+      "group": 43
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 644,
+    "fields": {
+      "name": "Лизинговые компании",
+      "group": 43
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 645,
+    "fields": {
+      "name": "НПФ",
+      "group": 43
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 646,
+    "fields": {
+      "name": "Страхование, перестрахование",
+      "group": 43
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 647,
+    "fields": {
+      "name": "Банк",
+      "group": 43
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 648,
+    "fields": {
+      "name": "Управляющая, инвестиционная компания (управление активами)",
+      "group": 43
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 649,
+    "fields": {
+      "name": "Факторинговые компании",
+      "group": 43
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 650,
+    "fields": {
+      "name": "Финансово-кредитное посредничество (биржа, брокерская деятельность, выпуск и обслуживание карт, оценка рисков, обменные пункты, агентства по кредитованию, инкассация, ломбард, платежные системы)",
+      "group": 43
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 44,
+    "fields": {
+      "name": "Услуги для бизнеса"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 390,
+    "fields": {
+      "name": "Безопасность, охранная деятельность",
+      "group": 44
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 391,
+    "fields": {
+      "name": "Кадровые агентства",
+      "group": 44
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 392,
+    "fields": {
+      "name": "Колл-центры, диспетчерские службы",
+      "group": 44
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 393,
+    "fields": {
+      "name": "Консалтинговые услуги",
+      "group": 44
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 394,
+    "fields": {
+      "name": "Переводческая деятельность",
+      "group": 44
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 395,
+    "fields": {
+      "name": "Экологическое обслуживание, водоочистка, утилизация отходов",
+      "group": 44
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 396,
+    "fields": {
+      "name": "Услуги по организации поездок и бронированию",
+      "group": 44
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 397,
+    "fields": {
+      "name": "Контроль качества, экспертиза, испытания и сертификация",
+      "group": 44
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 398,
+    "fields": {
+      "name": "Юридическое обслуживание",
+      "group": 44
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 45,
+    "fields": {
+      "name": "Добывающая отрасль"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 534,
+    "fields": {
+      "name": "Добыча и обогащение угля",
+      "group": 45
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 535,
+    "fields": {
+      "name": "Добыча и обогащение руд черных, цветных, драгоценных, благородных, редких металлов",
+      "group": 45
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 536,
+    "fields": {
+      "name": "Добыча и обогащение минерального сырья (соль, сера, глинозем), разработка карьеров (песок, глина, камень), добыча торфа",
+      "group": 45
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 537,
+    "fields": {
+      "name": "Инженерно-изыскательские, гидрогеологические, геологоразведочные работы",
+      "group": 45
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 46,
+    "fields": {
+      "name": "Энергетика"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 469,
+    "fields": {
+      "name": "Атомная энергетика (генерация электроэнергии, АЭС)",
+      "group": 46
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 470,
+    "fields": {
+      "name": "Гидроэнергетика (генерация электроэнергии, ГЭС)",
+      "group": 46
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 471,
+    "fields": {
+      "name": "Теплоэнергетика (генерация электроэнергии и тепла, ТЭС)",
+      "group": 46
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 472,
+    "fields": {
+      "name": "Альтернативная энергетика: гео-, ветро-, солнце-, био- (генерация электроэнергии)",
+      "group": 46
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 473,
+    "fields": {
+      "name": "Передача, распределение электроэнергии",
+      "group": 46
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 474,
+    "fields": {
+      "name": "Сбыт и потребление электроэнергии",
+      "group": 46
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 475,
+    "fields": {
+      "name": "Теплоснабжение (ТЭЦ)",
+      "group": 46
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 476,
+    "fields": {
+      "name": "Инфраструктурная компания в энергетике (СО ЕЭС, АТС, ЦФР и т.п.)",
+      "group": 46
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 477,
+    "fields": {
+      "name": "Консалтинг в области энергоэффективности",
+      "group": 46
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 47,
+    "fields": {
+      "name": "Нефть и газ"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 611,
+    "fields": {
+      "name": "Добыча нефти",
+      "group": 47
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 612,
+    "fields": {
+      "name": "Нефтепереработка, нефтехимия (производство)",
+      "group": 47
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 613,
+    "fields": {
+      "name": "Транспортировка, хранение нефти",
+      "group": 47
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 614,
+    "fields": {
+      "name": "Нефтехимия (продвижение, оптовая торговля)",
+      "group": 47
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 615,
+    "fields": {
+      "name": "ГСМ, топливо (продвижение, оптовая торговля)",
+      "group": 47
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 616,
+    "fields": {
+      "name": "ГСМ, топливо (розничная торговля)",
+      "group": 47
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 617,
+    "fields": {
+      "name": "Добыча газа",
+      "group": 47
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 618,
+    "fields": {
+      "name": "Переработка газа",
+      "group": 47
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 619,
+    "fields": {
+      "name": "Транспортировка, хранение газа",
+      "group": 47
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 48,
+    "fields": {
+      "name": "Медицина, фармацевтика, аптеки"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 676,
+    "fields": {
+      "name": "Аптека, оптика",
+      "group": 48
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 677,
+    "fields": {
+      "name": "Ветеринарная аптека",
+      "group": 48
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 678,
+    "fields": {
+      "name": "Ветеринарная деятельность",
+      "group": 48
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 679,
+    "fields": {
+      "name": "Клинические исследования",
+      "group": 48
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 680,
+    "fields": {
+      "name": "Лаборатория, исследовательский центр",
+      "group": 48
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 681,
+    "fields": {
+      "name": "Лечебно-профилактические учреждения",
+      "group": 48
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 682,
+    "fields": {
+      "name": "Учреждение соц.помощи и защиты",
+      "group": 48
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 683,
+    "fields": {
+      "name": "Фармацевтическая продукция (продвижение, оптовая торговля)",
+      "group": 48
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 684,
+    "fields": {
+      "name": "Фармацевтическая продукция (производство)",
+      "group": 48
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 49,
+    "fields": {
+      "name": "Услуги для населения"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 404,
+    "fields": {
+      "name": "Аренда автомобилей",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 405,
+    "fields": {
+      "name": "Домашний персонал",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 406,
+    "fields": {
+      "name": "Игорный бизнес",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 407,
+    "fields": {
+      "name": "Пошив, ремонт одежды и обуви",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 408,
+    "fields": {
+      "name": "Ритуальные услуги",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 409,
+    "fields": {
+      "name": "Салоны красоты",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 410,
+    "fields": {
+      "name": "Спортивные и фитнес-клубы",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 411,
+    "fields": {
+      "name": "Такси",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 412,
+    "fields": {
+      "name": "Туристические компании",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 413,
+    "fields": {
+      "name": "Фото- и видеоуслуги",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 414,
+    "fields": {
+      "name": "Химчистка",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 415,
+    "fields": {
+      "name": "Центры развлечения",
+      "group": 49
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 50,
+    "fields": {
+      "name": "Гостиницы, рестораны, общепит, кейтеринг"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 527,
+    "fields": {
+      "name": "Гостиница",
+      "group": 50
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 528,
+    "fields": {
+      "name": "Ресторан, общественное питание, фаст-фуд",
+      "group": 50
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 529,
+    "fields": {
+      "name": "Кейтеринг (выездное обслуживание)",
+      "group": 50
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 51,
+    "fields": {
+      "name": "ЖКХ"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 667,
+    "fields": {
+      "name": "Вентиляция и кондиционирование (монтаж, сервис, ремонт)",
+      "group": 51
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 668,
+    "fields": {
+      "name": "Водоснабжение и канализация",
+      "group": 51
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 669,
+    "fields": {
+      "name": "Лифтовое хозяйство (монтаж, сервис, ремонт)",
+      "group": 51
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 670,
+    "fields": {
+      "name": "Обеспечение пожарной безопасности, молниезащиты",
+      "group": 51
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 671,
+    "fields": {
+      "name": "Благоустройство и уборка территорий и зданий",
+      "group": 51
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 672,
+    "fields": {
+      "name": "Ремонт зданий и сооружений",
+      "group": 51
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 673,
+    "fields": {
+      "name": "Слаботочные сети (монтаж, сервис, ремонт)",
+      "group": 51
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 674,
+    "fields": {
+      "name": "Утилизация бытовых отходов",
+      "group": 51
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 675,
+    "fields": {
+      "name": "Энергоснабжение",
+      "group": 51
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 52,
+    "fields": {
+      "name": "Искусство, культура"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 651,
+    "fields": {
+      "name": "Архив, библиотека, искусствоведение",
+      "group": 52
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 652,
+    "fields": {
+      "name": "Ботанический сад, зоопарк, заповедник",
+      "group": 52
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 653,
+    "fields": {
+      "name": "Музей, галерея, театр",
+      "group": 52
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 388,
+    "fields": {
+      "name": "Промышленное оборудование, техника, станки и комплектующие"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 487,
+    "fields": {
+      "name": "Медицинское, диагностическое оборудование, инструменты (производство)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 488,
+    "fields": {
+      "name": "Медицинское, диагностическое оборудование, инструменты (монтаж, сервис, ремонт)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 489,
+    "fields": {
+      "name": "Медицинское, диагностическое оборудование, инструменты (продвижение, оптовая торговля)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 490,
+    "fields": {
+      "name": "Оборудование для ресторанов, гостиниц, кейтеринга, розничной торговли (производство)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 491,
+    "fields": {
+      "name": "Оборудование для ресторанов, гостиниц, кейтеринга, розничной торговли  (монтаж, сервис, ремонт)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 492,
+    "fields": {
+      "name": "Оборудование для ресторанов, гостиниц, кейтеринга, розничной торговли  (продвижение, оптовая торговля)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 493,
+    "fields": {
+      "name": "Оборудование для пищевой промышленности, упаковки и хранения (производство)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 494,
+    "fields": {
+      "name": "Оборудование для пищевой промышленности, упаковки и хранения (монтаж, сервис, ремонт)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 495,
+    "fields": {
+      "name": "Оборудование для пищевой промышленности, упаковки и хранения (продвижение, оптовая торговля)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 496,
+    "fields": {
+      "name": "Оборудование и станки для отраслей легкой промышленности (производство)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 497,
+    "fields": {
+      "name": "Оборудование и станки для отраслей легкой промышленности (монтаж, сервис, ремонт)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 498,
+    "fields": {
+      "name": "Оборудование и станки для отраслей легкой промышленности (продвижение, оптовая торговля)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 499,
+    "fields": {
+      "name": "Оборудование и станки для добывающей, энергетической, нефтегазовой и химической отрасли  (производство)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 500,
+    "fields": {
+      "name": "Оборудование и станки для добывающей, энергетической, нефтегазовой и химической отрасли  (монтаж, сервис, ремонт)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 501,
+    "fields": {
+      "name": "Оборудование и станки для добывающей, энергетической, нефтегазовой и химической отрасли  (продвижение, оптовая торговля)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 502,
+    "fields": {
+      "name": "Оборудование и станки для металлургии и металлообработки (производство)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 503,
+    "fields": {
+      "name": "Оборудование и станки для металлургии и металлообработки (монтаж, сервис, ремонт)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 504,
+    "fields": {
+      "name": "Оборудование и станки для металлургии и металлообработки (продвижение, оптовая торговля)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 505,
+    "fields": {
+      "name": "Оборудование для деревообработки, заготовки леса, целлюлозно-бумажной промышленности (производство)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 506,
+    "fields": {
+      "name": "Оборудование для деревообработки, заготовки леса, целлюлозно-бумажной промышленности (монтаж, сервис, ремонт)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 507,
+    "fields": {
+      "name": "Оборудование для деревообработки, заготовки леса, целлюлозно-бумажной промышленности (продвижение, оптовая торговля)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 508,
+    "fields": {
+      "name": "Дорожно-строительная техника, сельскохозяйственная и другая спец.техника, оборудование, лифты, погрузочно-разгрузочное, складское оборудование (производство)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 509,
+    "fields": {
+      "name": "Дорожно-строительная техника, сельскохозяйственная и другая спец.техника, оборудование, лифты, погрузочно-разгрузочное, складское оборудование (монтаж, сервис, ремонт)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 510,
+    "fields": {
+      "name": "Дорожно-строительная техника, сельскохозяйственная и другая спец.техника, оборудование, лифты, погрузочно-разгрузочное, складское оборудование (продвижение, оптовая торговля)",
+      "group": 388
+    }
+  },
+  {
+    "model": "organizations.industrygroup",
+    "pk": 389,
+    "fields": {
+      "name": "Управление многопрофильными активами"
+    }
+  },
+  {
+    "model": "organizations.industry",
+    "pk": 530,
+    "fields": {
+      "name": "Управляющая компания группы, холдинга, штаб-квартира",
+      "group": 389
+    }
+  }
+]

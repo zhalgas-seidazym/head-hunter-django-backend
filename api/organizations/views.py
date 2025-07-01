@@ -29,6 +29,12 @@ class OrganizationViewSet(
     serializer_class = OrganizationSerializer
 
     serializers = {
+        "create": OrganizationSerializer,
+        "list": OrganizationSerializer,
+        "retrieve": OrganizationSerializer,
+        "update": OrganizationSerializer,
+        "partial_update": OrganizationSerializer,
+        "destroy": OrganizationSerializer,
         "my_organization_roles": OrganizationMemberSerializer,
     }
     permissions = {

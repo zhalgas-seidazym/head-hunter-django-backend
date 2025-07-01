@@ -57,6 +57,7 @@ SPECTACULAR_SETTINGS = {
     'TITLE': 'Head Hunter Copy Api',
     'DESCRIPTION': 'Head Hunter Copy Api',
     'VERSION': '1.0.0',
+    "COMPONENT_SPLIT_REQUEST": True,
 }
 
 

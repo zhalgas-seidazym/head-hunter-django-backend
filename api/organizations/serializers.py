@@ -3,7 +3,6 @@ from rest_framework import serializers
 from .models import IndustryGroup, Industry, Organization, OrganizationMember
 from ..locations.models import City
 from ..locations.serializers import CitySerializer
-from ..users.serializers import UserSerializer
 
 
 class IndustrySerializer(serializers.ModelSerializer):

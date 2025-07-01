@@ -21,7 +21,7 @@ class Organization(BaseModel):
     website = models.URLField(blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     phone = models.CharField(max_length=20, blank=True, null=True)
-    city = models.ForeignKey(City, blank=True, null=True, on_delete=models.SET_NULL, related_name='organization_city')
+    city = models.ForeignKey(City, blank=True, null=True, on_delete=models.SET_NULL, related_name='organizations')
     address = models.CharField(max_length=255, blank=True, null=True)
     logo = models.ImageField(upload_to="logos/", blank=True, null=True)
 

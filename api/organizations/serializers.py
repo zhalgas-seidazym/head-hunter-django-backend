@@ -1,8 +1,10 @@
 from rest_framework import serializers
 
-from .models import IndustryGroup, Industry, Organization, OrganizationMember
+from .models import IndustryGroup, Industry, Organization, OrganizationMember, OrganizationJoinRequest
+from ..common.enums import OrganizationRequestStatus, OrganizationRole
 from ..locations.models import City
 from ..locations.serializers import CitySerializer
+from ..users.serializers import UserSerializer
 
 
 class IndustrySerializer(serializers.ModelSerializer):
@@ -49,13 +51,13 @@ class OrganizationSerializer(serializers.ModelSerializer):
 
     def validate_industry(self, value):
         if not value:
-            raise serializers.ValidationError("Поле 'industry' обязательно и не может быть пустым.")
+            raise serializers.ValidationError("Field 'industry' should not be empty.")
         return value
 
     def validate(self, attrs):
         if self.instance is None and not attrs.get('industry'):
             raise serializers.ValidationError({
-                'industry': "Поле 'industry' обязательно при создании."
+                'industry': "Field 'industry' is mandatory for creating."
             })
         return attrs
 
@@ -70,3 +72,66 @@ class OrganizationMemberSerializer(serializers.ModelSerializer):
             'invited_by',
         ]
         read_only_fields = fields
+
+
+
+class OrganizationJoinRequestSerializer(serializers.ModelSerializer):
+    user = serializers.SerializerMethodField(read_only=True)
+    status = serializers.CharField(read_only=True)
+
+    class Meta:
+        model = OrganizationJoinRequest
+        fields = ['id', 'organization', 'user', 'status']
+        extra_kwargs = {
+            'organization': {'required': True},
+        }
+
+    def create(self, validated_data):
+        user = self.context['request'].user
+        return OrganizationJoinRequest.objects.create(user=user, **validated_data)
+
+    def validate(self, attrs):
+        user = self.context['request'].user
+        organization = attrs.get('organization')
+
+        existing_request = OrganizationJoinRequest.objects.filter(
+            user=user,
+            organization=organization,
+            status__in=[
+                OrganizationRequestStatus.PENDING,
+                OrganizationRequestStatus.ACCEPTED,
+            ]
+        ).first()
+
+        if existing_request:
+            raise serializers.ValidationError("You already sent request or accepted.")
+
+        return attrs
+
+
+
+class OrganizationJoinRequestManageSerializer(serializers.ModelSerializer):
+    user = UserSerializer(read_only=True)
+    status = serializers.ChoiceField(choices=OrganizationRequestStatus.choices)
+    role = serializers.ChoiceField(
+        choices=OrganizationRole.choices,
+        required=False,
+        allow_null=True
+    )
+
+    class Meta:
+        model = OrganizationJoinRequest
+        fields = ['id', 'organization', 'user', 'status', 'role']
+        read_only_fields = ['organization', 'user']
+
+    def validate(self, attrs):
+        status = attrs.get('status')
+        role = attrs.get('role')
+
+        if status == OrganizationRequestStatus.ACCEPTED and not role:
+            raise serializers.ValidationError({
+                "role": "Show user role when accepting."
+            })
+
+        return attrs
+

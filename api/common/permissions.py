@@ -33,3 +33,24 @@ class IsOrganizationOwner(permissions.BasePermission):
             organization_id=org_id,
             role=OrganizationRole.OWNER
         ).exists()
+
+class CanManageOrganizationJoinRequests(permissions.BasePermission):
+    """
+    Проверяет, что пользователь — owner или employer в организации с данным pk (organization_pk)
+    """
+
+    def has_permission(self, request, view):
+        organization_pk = view.kwargs.get('organization_id')
+
+        if not organization_pk:
+            return False
+
+        member = OrganizationMember.objects.filter(
+            user=request.user,
+            organization_id=organization_pk
+        ).first()
+
+        if not member:
+            return False
+
+        return member.role in (OrganizationRole.OWNER, OrganizationRole.EMPLOYER)

@@ -50,8 +50,5 @@ class OrganizationJoinRequest(BaseModel):
     organization = models.ForeignKey('Organization', on_delete=models.CASCADE, related_name='join_requests')
     status = models.CharField(max_length=20, choices=OrganizationRequestStatus.choices, default=OrganizationRequestStatus.PENDING)
 
-    class Meta:
-        unique_together = ('user', 'organization')
-
     def __str__(self):
         return f"{self.user} → {self.organization} ({self.status})"

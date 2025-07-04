@@ -10,6 +10,7 @@ from api.common.permissions import IsEmployer, IsOrganizationOwner, CanManageOrg
 from api.organizations.serializers import *
 from api.organizations.services import OrganizationService, OrganizationJoinRequestService
 
+
 @extend_schema_view(
     list=extend_schema(tags=["Industries"], description="List of industries"),
     retrieve=extend_schema(tags=["Industries"], description="Retrieve single industry"),
@@ -17,6 +18,7 @@ from api.organizations.services import OrganizationService, OrganizationJoinRequ
 class IndustryViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Industry.objects.all()
     serializer_class = IndustrySerializer
+
 
 @extend_schema_view(
     list=extend_schema(tags=["Industries"], description="List of industry groups with industries"),
@@ -30,7 +32,6 @@ class IndustryGroupViewSet(viewsets.ReadOnlyModelViewSet):
 @extend_schema_view(
     create=extend_schema(tags=["Organizations"], description="Create an organization"),
     update=extend_schema(tags=["Organizations"], description="Update an organization"),
-    delete=extend_schema(tags=["Organizations"], description="Delete an organization"),
     list=extend_schema(tags=["Organizations"], description="List organizations"),
     retrieve=extend_schema(tags=["Organizations"], description="Retrieve an organization"),
     partial_update=extend_schema(tags=["Organizations"], description="Partially update an organization"),
@@ -109,6 +110,7 @@ class CreateJoinRequestApiView(generics.CreateAPIView):
     serializer_class   = OrganizationJoinRequestSerializer
     permission_classes = [IsAuthenticated, IsEmployer]
 
+
 @extend_schema_view(
     get=extend_schema(tags=["Organization Join Requests"], description="Get your join requests to organizations"),
 )
@@ -119,12 +121,14 @@ class GetMyJoinRequestsApiView(generics.ListAPIView):
     def get_queryset(self):
         return OrganizationJoinRequest.objects.filter(user=self.request.user).order_by("-created_at")
 
+
 @extend_schema_view(
     get=extend_schema(tags=["Organization Join Requests"], description="Get join requests to organization"),
 )
 class ListOrganizationJoinRequestsApiView(generics.ListAPIView):
     serializer_class   = OrganizationJoinRequestManageSerializer
     permission_classes = [IsAuthenticated, CanManageOrganizationJoinRequests]
+    queryset = OrganizationJoinRequest.objects.all()
 
     def get_queryset(self):
         organization_id = self.kwargs["organization_id"]
@@ -132,6 +136,7 @@ class ListOrganizationJoinRequestsApiView(generics.ListAPIView):
             organization_id=organization_id,
             status=OrganizationRequestStatus.PENDING
         )
+
 
 @extend_schema_view(
     put=extend_schema(tags=["Organization Join Requests"], description="Update a join request status to organization"),

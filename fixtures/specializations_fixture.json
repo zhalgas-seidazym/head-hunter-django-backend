@@ -1,0 +1,2343 @@
+[
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 1,
+    "fields": {
+      "name": "Автомобильный бизнес"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 1,
+    "fields": {
+      "name": "Автомойщик",
+      "group": 1
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 2,
+    "fields": {
+      "name": "Автослесарь, автомеханик",
+      "group": 1
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 3,
+    "fields": {
+      "name": "Мастер-приемщик",
+      "group": 1
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 4,
+    "fields": {
+      "name": "Менеджер по продажам, менеджер по работе с клиентами",
+      "group": 1
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 2,
+    "fields": {
+      "name": "Административный персонал"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 5,
+    "fields": {
+      "name": "Администратор",
+      "group": 2
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 6,
+    "fields": {
+      "name": "Делопроизводитель, архивариус",
+      "group": 2
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 7,
+    "fields": {
+      "name": "Курьер",
+      "group": 2
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 8,
+    "fields": {
+      "name": "Менеджер/руководитель АХО",
+      "group": 2
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 9,
+    "fields": {
+      "name": "Оператор ПК, оператор базы данных",
+      "group": 2
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 10,
+    "fields": {
+      "name": "Офис-менеджер",
+      "group": 2
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 11,
+    "fields": {
+      "name": "Переводчик",
+      "group": 2
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 12,
+    "fields": {
+      "name": "Секретарь, помощник руководителя, ассистент",
+      "group": 2
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 3,
+    "fields": {
+      "name": "Безопасность"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 13,
+    "fields": {
+      "name": "Военнослужащий",
+      "group": 3
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 14,
+    "fields": {
+      "name": "Охранник",
+      "group": 3
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 15,
+    "fields": {
+      "name": "Полицейский",
+      "group": 3
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 16,
+    "fields": {
+      "name": "Специалист по информационной безопасности",
+      "group": 3
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 17,
+    "fields": {
+      "name": "Специалист службы безопасности",
+      "group": 3
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 4,
+    "fields": {
+      "name": "Высший и средний менеджмент"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 18,
+    "fields": {
+      "name": "Генеральный директор, исполнительный директор (CEO)",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 19,
+    "fields": {
+      "name": "Директор по информационным технологиям (CIO)",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 20,
+    "fields": {
+      "name": "Директор по маркетингу и PR (CMO)",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 21,
+    "fields": {
+      "name": "Директор по персоналу (HRD)",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 22,
+    "fields": {
+      "name": "Директор юридического департамента (CLO)",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 23,
+    "fields": {
+      "name": "Коммерческий директор (CCO)",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 24,
+    "fields": {
+      "name": "Начальник производства",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 25,
+    "fields": {
+      "name": "Операционный директор (COO)",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 26,
+    "fields": {
+      "name": "Руководитель отдела аналитики",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 27,
+    "fields": {
+      "name": "Руководитель отдела логистики",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 28,
+    "fields": {
+      "name": "Руководитель отдела маркетинга и рекламы",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 29,
+    "fields": {
+      "name": "Руководитель отдела персонала",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 30,
+    "fields": {
+      "name": "Руководитель филиала",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 31,
+    "fields": {
+      "name": "Технический директор (CTO)",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 32,
+    "fields": {
+      "name": "Финансовый директор (CFO)",
+      "group": 4
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 5,
+    "fields": {
+      "name": "Добыча сырья"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 33,
+    "fields": {
+      "name": "Геодезист",
+      "group": 5
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 34,
+    "fields": {
+      "name": "Геолог",
+      "group": 5
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 35,
+    "fields": {
+      "name": "Лаборант",
+      "group": 5
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 36,
+    "fields": {
+      "name": "Машинист",
+      "group": 5
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 37,
+    "fields": {
+      "name": "Научный специалист, исследователь",
+      "group": 5
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 38,
+    "fields": {
+      "name": "Начальник смены, мастер участка",
+      "group": 5
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 39,
+    "fields": {
+      "name": "Технолог",
+      "group": 5
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 6,
+    "fields": {
+      "name": "Домашний, обслуживающий персонал"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 40,
+    "fields": {
+      "name": "Администратор",
+      "group": 6
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 41,
+    "fields": {
+      "name": "Водитель",
+      "group": 6
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 42,
+    "fields": {
+      "name": "Воспитатель, няня",
+      "group": 6
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 43,
+    "fields": {
+      "name": "Дворник",
+      "group": 6
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 44,
+    "fields": {
+      "name": "Курьер",
+      "group": 6
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 45,
+    "fields": {
+      "name": "Официант, бармен, бариста",
+      "group": 6
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 46,
+    "fields": {
+      "name": "Охранник",
+      "group": 6
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 47,
+    "fields": {
+      "name": "Уборщица, уборщик",
+      "group": 6
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 7,
+    "fields": {
+      "name": "Закупки"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 48,
+    "fields": {
+      "name": "Менеджер по закупкам",
+      "group": 7
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 49,
+    "fields": {
+      "name": "Специалист по тендерам",
+      "group": 7
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 8,
+    "fields": {
+      "name": "Информационные технологии"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 50,
+    "fields": {
+      "name": "BI-аналитик, аналитик данных",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 51,
+    "fields": {
+      "name": "DevOps-инженер",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 52,
+    "fields": {
+      "name": "Аналитик",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 53,
+    "fields": {
+      "name": "Арт-директор, креативный директор",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 54,
+    "fields": {
+      "name": "Бизнес-аналитик",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 55,
+    "fields": {
+      "name": "Гейм-дизайнер",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 56,
+    "fields": {
+      "name": "Дата-сайентист",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 57,
+    "fields": {
+      "name": "Дизайнер, художник",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 58,
+    "fields": {
+      "name": "Директор по информационным технологиям (CIO)",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 59,
+    "fields": {
+      "name": "Менеджер продукта",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 60,
+    "fields": {
+      "name": "Методолог",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 61,
+    "fields": {
+      "name": "Программист, разработчик",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 62,
+    "fields": {
+      "name": "Продуктовый аналитик",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 63,
+    "fields": {
+      "name": "Руководитель группы разработки",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 64,
+    "fields": {
+      "name": "Руководитель отдела аналитики",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 65,
+    "fields": {
+      "name": "Руководитель проектов",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 66,
+    "fields": {
+      "name": "Сетевой инженер",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 67,
+    "fields": {
+      "name": "Системный администратор",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 68,
+    "fields": {
+      "name": "Системный аналитик",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 69,
+    "fields": {
+      "name": "Системный инженер",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 70,
+    "fields": {
+      "name": "Специалист по информационной безопасности",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 71,
+    "fields": {
+      "name": "Специалист технической поддержки",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 72,
+    "fields": {
+      "name": "Тестировщик",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 73,
+    "fields": {
+      "name": "Технический директор (CTO)",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 74,
+    "fields": {
+      "name": "Технический писатель",
+      "group": 8
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 9,
+    "fields": {
+      "name": "Искусство, развлечения, массмедиа"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 75,
+    "fields": {
+      "name": "Арт-директор, креативный директор",
+      "group": 9
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 76,
+    "fields": {
+      "name": "Артист, актер, аниматор",
+      "group": 9
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 77,
+    "fields": {
+      "name": "Видеооператор, видеомонтажер",
+      "group": 9
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 78,
+    "fields": {
+      "name": "Гейм-дизайнер",
+      "group": 9
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 79,
+    "fields": {
+      "name": "Дизайнер, художник",
+      "group": 9
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 80,
+    "fields": {
+      "name": "Журналист, корреспондент",
+      "group": 9
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 81,
+    "fields": {
+      "name": "Копирайтер, редактор, корректор",
+      "group": 9
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 82,
+    "fields": {
+      "name": "Продюсер",
+      "group": 9
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 83,
+    "fields": {
+      "name": "Режиссер, сценарист",
+      "group": 9
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 84,
+    "fields": {
+      "name": "Фотограф, ретушер",
+      "group": 9
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 10,
+    "fields": {
+      "name": "Маркетинг, реклама, PR"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 85,
+    "fields": {
+      "name": "Event-менеджер",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 86,
+    "fields": {
+      "name": "PR-менеджер",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 87,
+    "fields": {
+      "name": "SMM-менеджер, контент-менеджер",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 88,
+    "fields": {
+      "name": "Аналитик",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 89,
+    "fields": {
+      "name": "Арт-директор, креативный директор",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 90,
+    "fields": {
+      "name": "Дизайнер, художник",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 91,
+    "fields": {
+      "name": "Директор по маркетингу и PR (CMO)",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 92,
+    "fields": {
+      "name": "Копирайтер, редактор, корректор",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 93,
+    "fields": {
+      "name": "Маркетолог-аналитик",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 94,
+    "fields": {
+      "name": "Менеджер по маркетингу, интернет-маркетолог",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 95,
+    "fields": {
+      "name": "Менеджер по продажам, менеджер по работе с клиентами",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 96,
+    "fields": {
+      "name": "Менеджер по работе с партнерами",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 97,
+    "fields": {
+      "name": "Промоутер",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 98,
+    "fields": {
+      "name": "Руководитель отдела маркетинга и рекламы",
+      "group": 10
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 11,
+    "fields": {
+      "name": "Медицина, фармацевтика"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 99,
+    "fields": {
+      "name": "Администратор",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 100,
+    "fields": {
+      "name": "Ассистент врача",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 101,
+    "fields": {
+      "name": "Ветеринарный врач",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 102,
+    "fields": {
+      "name": "Врач",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 103,
+    "fields": {
+      "name": "Главный врач, заведующий отделением",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 104,
+    "fields": {
+      "name": "Заведующий аптекой",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 105,
+    "fields": {
+      "name": "Лаборант",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 106,
+    "fields": {
+      "name": "Медицинская сестра, медицинский брат",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 107,
+    "fields": {
+      "name": "Медицинский представитель",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 108,
+    "fields": {
+      "name": "Научный специалист, исследователь",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 109,
+    "fields": {
+      "name": "Специалист по сертификации",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 110,
+    "fields": {
+      "name": "Фармацевт-провизор",
+      "group": 11
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 12,
+    "fields": {
+      "name": "Наука, образование"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 111,
+    "fields": {
+      "name": "Бизнес-тренер",
+      "group": 12
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 112,
+    "fields": {
+      "name": "Воспитатель, няня",
+      "group": 12
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 113,
+    "fields": {
+      "name": "Лаборант",
+      "group": 12
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 114,
+    "fields": {
+      "name": "Методист",
+      "group": 12
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 115,
+    "fields": {
+      "name": "Научный специалист, исследователь",
+      "group": 12
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 116,
+    "fields": {
+      "name": "Психолог",
+      "group": 12
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 117,
+    "fields": {
+      "name": "Учитель, преподаватель, педагог",
+      "group": 12
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 13,
+    "fields": {
+      "name": "Продажи, обслуживание клиентов"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 118,
+    "fields": {
+      "name": "Агент по недвижимости",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 119,
+    "fields": {
+      "name": "Аналитик",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 120,
+    "fields": {
+      "name": "Брокер",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 121,
+    "fields": {
+      "name": "Кассир-операционист",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 122,
+    "fields": {
+      "name": "Коммерческий директор (CCO)",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 123,
+    "fields": {
+      "name": "Координатор отдела продаж",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 124,
+    "fields": {
+      "name": "Кредитный специалист",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 125,
+    "fields": {
+      "name": "Менеджер по продажам, менеджер по работе с клиентами",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 126,
+    "fields": {
+      "name": "Менеджер по работе с партнерами",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 127,
+    "fields": {
+      "name": "Оператор call-центра, специалист контактного центра",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 128,
+    "fields": {
+      "name": "Продавец-консультант, продавец-кассир",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 129,
+    "fields": {
+      "name": "Руководитель отдела клиентского обслуживания",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 130,
+    "fields": {
+      "name": "Руководитель отдела продаж",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 131,
+    "fields": {
+      "name": "Руководитель филиала",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 132,
+    "fields": {
+      "name": "Специалист по сертификации",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 133,
+    "fields": {
+      "name": "Специалист технической поддержки",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 134,
+    "fields": {
+      "name": "Страховой агент",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 135,
+    "fields": {
+      "name": "Торговый представитель",
+      "group": 13
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 14,
+    "fields": {
+      "name": "Производство, сервисное обслуживание"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 136,
+    "fields": {
+      "name": "Инженер ПНР",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 137,
+    "fields": {
+      "name": "Инженер по качеству",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 138,
+    "fields": {
+      "name": "Инженер по охране труда и технике безопасности, инженер-эколог",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 139,
+    "fields": {
+      "name": "Инженер по эксплуатации",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 140,
+    "fields": {
+      "name": "Инженер-конструктор, инженер-проектировщик",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 141,
+    "fields": {
+      "name": "Инженер-электроник, инженер-электронщик",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 142,
+    "fields": {
+      "name": "Инженер-энергетик, инженер-электрик",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 143,
+    "fields": {
+      "name": "Контролёр ОТК",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 144,
+    "fields": {
+      "name": "Лаборант",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 145,
+    "fields": {
+      "name": "Мастер по ремонту оборудования, техники",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 146,
+    "fields": {
+      "name": "Машинист",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 147,
+    "fields": {
+      "name": "Метролог",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 148,
+    "fields": {
+      "name": "Механик",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 149,
+    "fields": {
+      "name": "Научный специалист, исследователь",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 150,
+    "fields": {
+      "name": "Начальник производства",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 151,
+    "fields": {
+      "name": "Начальник смены, мастер участка",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 152,
+    "fields": {
+      "name": "Оператор производственной линии",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 153,
+    "fields": {
+      "name": "Оператор станков с ЧПУ",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 154,
+    "fields": {
+      "name": "Сварщик",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 155,
+    "fields": {
+      "name": "Сервисный инженер, инженер-механик",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 156,
+    "fields": {
+      "name": "Слесарь, сантехник",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 157,
+    "fields": {
+      "name": "Специалист по сертификации",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 158,
+    "fields": {
+      "name": "Технолог",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 159,
+    "fields": {
+      "name": "Токарь, фрезеровщик, шлифовщик",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 160,
+    "fields": {
+      "name": "Швея, портной, закройщик",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 161,
+    "fields": {
+      "name": "Электромонтажник",
+      "group": 14
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 15,
+    "fields": {
+      "name": "Рабочий персонал"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 162,
+    "fields": {
+      "name": "Автослесарь, автомеханик",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 163,
+    "fields": {
+      "name": "Водитель",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 164,
+    "fields": {
+      "name": "Грузчик",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 165,
+    "fields": {
+      "name": "Кладовщик",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 166,
+    "fields": {
+      "name": "Маляр, штукатур",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 167,
+    "fields": {
+      "name": "Машинист",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 168,
+    "fields": {
+      "name": "Механик",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 169,
+    "fields": {
+      "name": "Монтажник",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 170,
+    "fields": {
+      "name": "Оператор производственной линии",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 171,
+    "fields": {
+      "name": "Оператор станков с ЧПУ",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 172,
+    "fields": {
+      "name": "Разнорабочий",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 173,
+    "fields": {
+      "name": "Сварщик",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 174,
+    "fields": {
+      "name": "Сервисный инженер, инженер-механик",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 175,
+    "fields": {
+      "name": "Слесарь, сантехник",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 176,
+    "fields": {
+      "name": "Токарь, фрезеровщик, шлифовщик",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 177,
+    "fields": {
+      "name": "Упаковщик, комплектовщик",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 178,
+    "fields": {
+      "name": "Электромонтажник",
+      "group": 15
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 16,
+    "fields": {
+      "name": "Розничная торговля"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 179,
+    "fields": {
+      "name": "Администратор магазина, администратор торгового зала",
+      "group": 16
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 180,
+    "fields": {
+      "name": "Директор магазина, директор сети магазинов",
+      "group": 16
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 181,
+    "fields": {
+      "name": "Мерчандайзер",
+      "group": 16
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 182,
+    "fields": {
+      "name": "Продавец-консультант, продавец-кассир",
+      "group": 16
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 183,
+    "fields": {
+      "name": "Промоутер",
+      "group": 16
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 184,
+    "fields": {
+      "name": "Супервайзер",
+      "group": 16
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 17,
+    "fields": {
+      "name": "Сельское хозяйство"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 185,
+    "fields": {
+      "name": "Агроном",
+      "group": 17
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 186,
+    "fields": {
+      "name": "Ветеринарный врач",
+      "group": 17
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 187,
+    "fields": {
+      "name": "Зоотехник",
+      "group": 17
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 188,
+    "fields": {
+      "name": "Машинист",
+      "group": 17
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 189,
+    "fields": {
+      "name": "Сервисный инженер, инженер-механик",
+      "group": 17
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 190,
+    "fields": {
+      "name": "Технолог",
+      "group": 17
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 18,
+    "fields": {
+      "name": "Спортивные клубы, фитнес, салоны красоты"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 191,
+    "fields": {
+      "name": "Администратор",
+      "group": 18
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 192,
+    "fields": {
+      "name": "Косметолог",
+      "group": 18
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 193,
+    "fields": {
+      "name": "Массажист",
+      "group": 18
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 194,
+    "fields": {
+      "name": "Мастер ногтевого сервиса",
+      "group": 18
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 195,
+    "fields": {
+      "name": "Менеджер по продажам, менеджер по работе с клиентами",
+      "group": 18
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 196,
+    "fields": {
+      "name": "Парикмахер",
+      "group": 18
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 197,
+    "fields": {
+      "name": "Фитнес-тренер, инструктор тренажерного зала",
+      "group": 18
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 19,
+    "fields": {
+      "name": "Стратегия, инвестиции, консалтинг"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 198,
+    "fields": {
+      "name": "Аналитик",
+      "group": 19
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 199,
+    "fields": {
+      "name": "Бизнес-аналитик",
+      "group": 19
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 200,
+    "fields": {
+      "name": "Менеджер/консультант по стратегии",
+      "group": 19
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 201,
+    "fields": {
+      "name": "Руководитель проектов",
+      "group": 19
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 202,
+    "fields": {
+      "name": "Финансовый аналитик, инвестиционный аналитик",
+      "group": 19
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 20,
+    "fields": {
+      "name": "Страхование"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 203,
+    "fields": {
+      "name": "Андеррайтер",
+      "group": 20
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 204,
+    "fields": {
+      "name": "Оценщик",
+      "group": 20
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 205,
+    "fields": {
+      "name": "Страховой агент",
+      "group": 20
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 21,
+    "fields": {
+      "name": "Строительство, недвижимость"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 206,
+    "fields": {
+      "name": "Агент по недвижимости",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 207,
+    "fields": {
+      "name": "Архитектор",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 208,
+    "fields": {
+      "name": "Брокер",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 209,
+    "fields": {
+      "name": "Геодезист",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 210,
+    "fields": {
+      "name": "Главный инженер проекта",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 211,
+    "fields": {
+      "name": "Дизайнер, художник",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 212,
+    "fields": {
+      "name": "Инженер ПТО, инженер-сметчик",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 213,
+    "fields": {
+      "name": "Инженер по охране труда и технике безопасности, инженер-эколог",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 214,
+    "fields": {
+      "name": "Инженер по эксплуатации",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 215,
+    "fields": {
+      "name": "Инженер-конструктор, инженер-проектировщик",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 216,
+    "fields": {
+      "name": "Маляр, штукатур",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 217,
+    "fields": {
+      "name": "Машинист",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 218,
+    "fields": {
+      "name": "Монтажник",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 219,
+    "fields": {
+      "name": "Прораб, мастер СМР",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 220,
+    "fields": {
+      "name": "Разнорабочий",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 221,
+    "fields": {
+      "name": "Руководитель проектов",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 222,
+    "fields": {
+      "name": "Руководитель строительного проекта",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 223,
+    "fields": {
+      "name": "Сварщик",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 224,
+    "fields": {
+      "name": "Слесарь, сантехник",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 225,
+    "fields": {
+      "name": "Электромонтажник",
+      "group": 21
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 22,
+    "fields": {
+      "name": "Транспорт, логистика, перевозки"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 226,
+    "fields": {
+      "name": "Бортпроводник",
+      "group": 22
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 227,
+    "fields": {
+      "name": "Водитель",
+      "group": 22
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 228,
+    "fields": {
+      "name": "Грузчик",
+      "group": 22
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 229,
+    "fields": {
+      "name": "Диспетчер",
+      "group": 22
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 230,
+    "fields": {
+      "name": "Кладовщик",
+      "group": 22
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 231,
+    "fields": {
+      "name": "Курьер",
+      "group": 22
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 232,
+    "fields": {
+      "name": "Машинист",
+      "group": 22
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 233,
+    "fields": {
+      "name": "Менеджер по логистике, менеджер по ВЭД",
+      "group": 22
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 234,
+    "fields": {
+      "name": "Начальник склада",
+      "group": 22
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 235,
+    "fields": {
+      "name": "Руководитель отдела логистики",
+      "group": 22
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 236,
+    "fields": {
+      "name": "Упаковщик, комплектовщик",
+      "group": 22
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 23,
+    "fields": {
+      "name": "Туризм, гостиницы, рестораны"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 237,
+    "fields": {
+      "name": "Администратор",
+      "group": 23
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 238,
+    "fields": {
+      "name": "Менеджер по туризму",
+      "group": 23
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 239,
+    "fields": {
+      "name": "Менеджер ресторана",
+      "group": 23
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 240,
+    "fields": {
+      "name": "Менеджер/руководитель АХО",
+      "group": 23
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 241,
+    "fields": {
+      "name": "Официант, бармен, бариста",
+      "group": 23
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 242,
+    "fields": {
+      "name": "Повар, пекарь, кондитер",
+      "group": 23
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 243,
+    "fields": {
+      "name": "Уборщица, уборщик",
+      "group": 23
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 244,
+    "fields": {
+      "name": "Хостес",
+      "group": 23
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 24,
+    "fields": {
+      "name": "Управление персоналом, тренинги"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 245,
+    "fields": {
+      "name": "Бизнес-тренер",
+      "group": 24
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 246,
+    "fields": {
+      "name": "Директор по персоналу (HRD)",
+      "group": 24
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 247,
+    "fields": {
+      "name": "Менеджер по компенсациям и льготам",
+      "group": 24
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 248,
+    "fields": {
+      "name": "Менеджер по персоналу",
+      "group": 24
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 249,
+    "fields": {
+      "name": "Руководитель отдела персонала",
+      "group": 24
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 250,
+    "fields": {
+      "name": "Специалист по кадрам",
+      "group": 24
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 251,
+    "fields": {
+      "name": "Специалист по подбору персонала",
+      "group": 24
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 25,
+    "fields": {
+      "name": "Финансы, бухгалтерия"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 252,
+    "fields": {
+      "name": "Аудитор",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 253,
+    "fields": {
+      "name": "Брокер",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 254,
+    "fields": {
+      "name": "Бухгалтер",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 255,
+    "fields": {
+      "name": "Казначей",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 256,
+    "fields": {
+      "name": "Комплаенс-менеджер",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 257,
+    "fields": {
+      "name": "Кредитный специалист",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 258,
+    "fields": {
+      "name": "Методолог",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 259,
+    "fields": {
+      "name": "Специалист по взысканию задолженности",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 260,
+    "fields": {
+      "name": "Финансовый аналитик, инвестиционный аналитик",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 261,
+    "fields": {
+      "name": "Финансовый директор (CFO)",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 262,
+    "fields": {
+      "name": "Финансовый контролер",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 263,
+    "fields": {
+      "name": "Финансовый менеджер",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 264,
+    "fields": {
+      "name": "Экономист",
+      "group": 25
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 26,
+    "fields": {
+      "name": "Юристы"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 265,
+    "fields": {
+      "name": "Директор юридического департамента (CLO)",
+      "group": 26
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 266,
+    "fields": {
+      "name": "Комплаенс-менеджер",
+      "group": 26
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 267,
+    "fields": {
+      "name": "Юрисконсульт",
+      "group": 26
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 268,
+    "fields": {
+      "name": "Юрист",
+      "group": 26
+    }
+  },
+  {
+    "model": "specializations.specializationgroup",
+    "pk": 27,
+    "fields": {
+      "name": "Другое"
+    }
+  },
+  {
+    "model": "specializations.specialization",
+    "pk": 269,
+    "fields": {
+      "name": "Другое",
+      "group": 27
+    }
+  }
+]

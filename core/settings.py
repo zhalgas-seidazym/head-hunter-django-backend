@@ -78,6 +78,7 @@ INSTALLED_APPS = [
     'api.organizations',
     'api.locations',
     'api.skills',
+    'api.specializations',
 ]
 
 MIDDLEWARE = [

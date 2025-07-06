@@ -1,8 +1,8 @@
-from rest_framework import viewsets, generics, mixins
+from rest_framework import viewsets, generics
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import action
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from drf_spectacular.utils import extend_schema_view, extend_schema
 
 from api.common.mixins import *
@@ -58,8 +58,8 @@ class OrganizationViewSet(
         "my_organization_roles": OrganizationMemberSerializer,
     }
     permissions = {
-        "list": (),
-        "retrieve": (),
+        "list": (AllowAny, ),
+        "retrieve": (AllowAny, ),
         "create": (IsAuthenticated, IsEmployer),
         "update": (IsAuthenticated, IsOrganizationOwner),
         "partial_update": (IsAuthenticated, IsOrganizationOwner),
@@ -117,6 +117,7 @@ class CreateJoinRequestApiView(generics.CreateAPIView):
 class GetMyJoinRequestsApiView(generics.ListAPIView):
     serializer_class   = OrganizationJoinRequestSerializer
     permission_classes = [IsAuthenticated, IsEmployer]
+    queryset = OrganizationJoinRequest.objects.all()
 
     def get_queryset(self):
         return OrganizationJoinRequest.objects.filter(user=self.request.user).order_by("-created_at")

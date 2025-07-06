@@ -35,3 +35,16 @@ class ActionPermissionMixin:
             ]
 
         return [self.DEFAULT_PERMISSION_CLASS()]
+
+
+class MethodPermissionMixin:
+    DEFAULT_PERMISSION_CLASS = permissions.IsAuthenticated
+    permissions = {}
+
+    def get_permissions(self):
+        method = self.request.method.lower()
+
+        if method in self.permissions:
+            return [permission() for permission in self.permissions[method]]
+
+        return [self.DEFAULT_PERMISSION_CLASS()]

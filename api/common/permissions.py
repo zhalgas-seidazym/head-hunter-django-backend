@@ -1,7 +1,8 @@
+from django.shortcuts import get_object_or_404
 from rest_framework import permissions
 
 from api.common.enums import Role, OrganizationRole
-from api.organizations.models import OrganizationMember
+from api.organizations.models import OrganizationMember, Organization
 
 
 class IsEmployer(permissions.BasePermission):
@@ -54,3 +55,36 @@ class CanManageOrganizationJoinRequests(permissions.BasePermission):
             return False
 
         return member.role in (OrganizationRole.OWNER, OrganizationRole.EMPLOYER)
+
+class CanManageVacancy(permissions.BasePermission):
+    """
+    Доступ разрешён, если:
+      1. В теле запроса передан organization (ID).
+      2. Ранг роли пользователя в этой организации > 0.
+         (OWNER, EMPLOYER, RECRUITER → OK; VIEWER → запрет)
+    """
+
+    message = "You don’t have permission to manage vacancies for this organization."
+
+    def has_permission(self, request, view):
+        org_id = (
+            request.data.get("organization")
+            or request.query_params.get("organization")
+        )
+        if not org_id:
+            self.message = "Organization ID is required."
+            return False
+
+        try:
+            org_id_int = int(org_id)
+            organization = get_object_or_404(Organization, pk=org_id_int)
+        except (ValueError, TypeError):
+            self.message = "Invalid organization ID."
+            return False
+
+        member = OrganizationMember.objects.filter(user=request.user,organization=organization).first()
+        if member is None:
+            self.message = "User does not belong to this organization."
+            return False
+
+        return member.has_role_greater_than(OrganizationRole.VIEWER)

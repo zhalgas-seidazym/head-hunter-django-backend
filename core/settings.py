@@ -79,6 +79,7 @@ INSTALLED_APPS = [
     'api.locations',
     'api.skills',
     'api.specializations',
+    'api.vacancies'
 ]
 
 MIDDLEWARE = [

@@ -1,7 +1,9 @@
 from rest_framework import generics, filters
 from rest_framework.response import Response
+from rest_framework import permissions
 from drf_spectacular.utils import extend_schema_view, extend_schema
 
+from api.common.mixins import MethodPermissionMixin
 from api.skills.models import Skill
 from api.skills.serializers import SkillSerializer
 
@@ -10,11 +12,15 @@ from api.skills.serializers import SkillSerializer
     get=extend_schema(tags=["Skills"], description="Get skills list."),
     post=extend_schema(tags=["Skills"], description="Get existing skill or create new one."),
 )
-class ListCreateSkillsAPIView(generics.ListCreateAPIView):
+class ListCreateSkillsAPIView(MethodPermissionMixin, generics.ListCreateAPIView):
     queryset = Skill.objects.all()
     serializer_class = SkillSerializer
     filter_backends = [filters.SearchFilter]
     search_fields = ['name']
+    permissions = {
+        'post': [permissions.IsAuthenticated],
+        'get': [permissions.AllowAny]
+    }
 
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)

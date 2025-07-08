@@ -1,7 +1,7 @@
 from django.db import models
 from django.conf import settings
 
-from api.common.enums import WorkExperience
+from api.common.enums import WorkExperience, EmploymentType, WorkSchedule, WorkFormat, PaymentFrequency
 from api.common.models import BaseModel
 from api.locations.models import City
 from api.organizations.models import Organization
@@ -15,13 +15,17 @@ class Vacancy(BaseModel):
 
     salary_from = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     salary_to = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
-    is_salary_gross = models.BooleanField(default=True)
+    is_salary_gross = models.BooleanField(default=True) # without any tax deductions
+    payment_frequency = models.CharField(
+        max_length=20,
+        choices=PaymentFrequency.choices,
+        default=PaymentFrequency.MONTHLY
+    )
 
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE, related_name="vacancies")
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, related_name="vacancies")
 
     city = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name="vacancies")
-    remote = models.BooleanField(default=False)
 
     specializations = models.ManyToManyField(Specialization, blank=True, related_name="vacancies")
     skills = models.ManyToManyField(Skill, blank=True, related_name="vacancies")
@@ -29,6 +33,21 @@ class Vacancy(BaseModel):
         max_length=20,
         choices=WorkExperience.choices,
         default=WorkExperience.NO_EXPERIENCE
+    )
+    employment_type = models.CharField(
+        max_length=20,
+        choices=EmploymentType.choices,
+        default=EmploymentType.FULL_TIME
+    )
+    work_format = models.CharField(
+        max_length=20,
+        choices=WorkFormat.choices,
+        default=WorkFormat.ON_SITE
+    )
+    work_schedule = models.CharField(
+        max_length=25,
+        choices=WorkSchedule.choices,
+        default=WorkSchedule.FULL_DAY
     )
 
     is_active = models.BooleanField(default=True)

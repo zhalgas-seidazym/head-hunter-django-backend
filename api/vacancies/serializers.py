@@ -4,7 +4,7 @@ from api.skills.models import Skill
 from api.specializations.models import Specialization
 from api.organizations.models import Organization
 from api.locations.models import City
-from api.common.enums import WorkExperience
+from api.common.enums import WorkExperience, PaymentFrequency, EmploymentType, WorkFormat, WorkSchedule
 
 
 class VacancySerializer(serializers.ModelSerializer):
@@ -14,6 +14,10 @@ class VacancySerializer(serializers.ModelSerializer):
     city = serializers.PrimaryKeyRelatedField(queryset=City.objects.all(), allow_null=True, required=False)
 
     work_experience = serializers.ChoiceField(choices=WorkExperience.choices, default=WorkExperience.NO_EXPERIENCE)
+    payment_frequency = serializers.ChoiceField(choices=PaymentFrequency.choices, default=PaymentFrequency.MONTHLY)
+    employment_type = serializers.ChoiceField(choices=EmploymentType.choices, default=EmploymentType.FULL_TIME)
+    work_format = serializers.ChoiceField(choices=WorkFormat.choices, default=WorkFormat.ON_SITE)
+    work_schedule = serializers.ChoiceField(choices=WorkSchedule.choices, default=WorkSchedule.FULL_DAY)
 
     class Meta:
         model = Vacancy
@@ -24,13 +28,16 @@ class VacancySerializer(serializers.ModelSerializer):
             "salary_from",
             "salary_to",
             "is_salary_gross",
+            "payment_frequency",
             "organization",
             "created_by",
             "city",
-            "remote",
             "specializations",
             "skills",
             "work_experience",
+            "employment_type",
+            "work_format",
+            "work_schedule",
             "is_active",
             "created_at",
             "updated_at"

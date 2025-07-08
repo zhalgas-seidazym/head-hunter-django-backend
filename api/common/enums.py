@@ -70,3 +70,13 @@ class Currency(models.TextChoices):
     TRY = "TRY", "₺ Турецкая лира"
     AED = "AED", "د.إ Дирхам ОАЭ"
     UZS = "UZS", "сум Узбекский сум"
+
+class EducationDegree(models.TextChoices):
+    SECONDARY = "SECONDARY", "Среднее"
+    SPECIAL_SECONDARY = "SPECIAL_SECONDARY", "Среднее специальное"
+    INCOMPLETE_HIGHER = "INCOMPLETE_HIGHER", "Неоконченное высшее"
+    HIGHER = "HIGHER", "Высшее"
+    BACHELOR = "BACHELOR", "Бакалавр"
+    MASTER = "MASTER", "Магистр"
+    CANDIDATE_SCIENCE = "CANDIDATE_SCIENCE", "Кандидат наук"
+    DOCTOR_SCIENCE = "DOCTOR_SCIENCE", "Доктор наук"

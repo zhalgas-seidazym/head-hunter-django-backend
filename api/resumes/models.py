@@ -1,7 +1,7 @@
 from django.db import models
 from django.conf import settings
 
-from api.common.enums import Currency
+from api.common.enums import Currency, EducationDegree
 from api.common.models import BaseModel
 from api.locations.models import City
 from api.organizations.models import Industry
@@ -36,7 +36,7 @@ class Resume(BaseModel):
         return f"{self.title} — {self.user}"
 
 
-class ResumeExperience(models.Model):
+class ResumeExperience(BaseModel):
     resume = models.ForeignKey(Resume, on_delete=models.CASCADE, related_name="experiences")
 
     company_name = models.CharField(max_length=255)
@@ -56,8 +56,6 @@ class ResumeExperience(models.Model):
 
     responsibilities = models.TextField(blank=True)
 
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
 
     def clean(self):
         from django.core.exceptions import ValidationError
@@ -66,3 +64,20 @@ class ResumeExperience(models.Model):
 
     def __str__(self):
         return f"{self.company_name} — {self.start_month}/{self.start_year}"
+
+
+class ResumeEducation(BaseModel):
+    resume = models.ForeignKey(Resume, on_delete=models.CASCADE, related_name="educations")
+
+    degree = models.CharField(
+        max_length=30,
+        choices=EducationDegree.choices
+    )
+    institution_name = models.CharField(max_length=255)
+    faculty = models.CharField(max_length=255, blank=True, null=True)
+    specialization = models.CharField(max_length=255, blank=True, null=True)
+    graduation_year = models.PositiveSmallIntegerField(blank=True, null=True)  # Можно не заполнять, если учится
+
+
+    def __str__(self):
+        return f"{self.institution_name} — {self.get_degree_display()}"

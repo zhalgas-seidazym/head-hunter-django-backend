@@ -74,10 +74,21 @@ class ResumeEducation(BaseModel):
         choices=EducationDegree.choices
     )
     institution_name = models.CharField(max_length=255)
-    faculty = models.CharField(max_length=255, blank=True, null=True)
-    specialization = models.CharField(max_length=255, blank=True, null=True)
-    graduation_year = models.PositiveSmallIntegerField(blank=True, null=True)  # Можно не заполнять, если учится
+    faculty = models.CharField(max_length=255)
+    specialization = models.CharField(max_length=255)
+    graduation_year = models.PositiveSmallIntegerField(blank=True, null=True)
 
 
     def __str__(self):
         return f"{self.institution_name} — {self.get_degree_display()}"
+
+class ResumeCourse(BaseModel):
+    resume = models.ForeignKey(Resume, on_delete=models.CASCADE, related_name="courses")
+
+    course_name = models.CharField(max_length=255)
+    organization = models.CharField(max_length=255)
+    specialization = models.CharField(max_length=255)
+    graduation_year = models.PositiveSmallIntegerField(blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.course_name} — {self.organization or '—'}"

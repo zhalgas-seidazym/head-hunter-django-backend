@@ -4,7 +4,7 @@ from api.resumes.models import (
     Resume, ResumeExperience, ResumeEducation, ResumeCourse
 )
 from api.common.enums import (
-    EmploymentType, WorkSchedule, WorkFormat, PaymentFrequency
+    EmploymentType, WorkSchedule, WorkFormat, PaymentFrequency, Currency
 )
 from api.skills.models import Skill
 from api.specializations.models import Specialization
@@ -97,13 +97,12 @@ class ResumeSerializer(serializers.ModelSerializer):
         many=True, queryset=Specialization.objects.all()
     )
 
-    # enum-списки с валидацией
+    currency = serializers.ChoiceField(choices=Currency.choices, default=Currency.KZT)
     employment_types = EnumListField(enum_class=EmploymentType, required=False)
     work_schedules = EnumListField(enum_class=WorkSchedule, required=False)
     work_formats = EnumListField(enum_class=WorkFormat, required=False)
     payment_frequencies = EnumListField(enum_class=PaymentFrequency, required=False)
 
-    # вложенные коллекции (только чтение)
     educations = ResumeEducationSerializer(many=True, read_only=True)
     experiences = ResumeExperienceSerializer(many=True, read_only=True)
     courses = ResumeCourseSerializer(many=True, read_only=True)

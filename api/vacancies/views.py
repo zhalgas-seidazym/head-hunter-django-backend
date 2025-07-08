@@ -3,6 +3,7 @@ from rest_framework import viewsets, permissions, filters
 from drf_spectacular.utils import extend_schema_view, extend_schema
 
 from api.common.permissions import CanManageVacancy
+from api.vacancies.filters import VacancyFilter
 from api.vacancies.models import Vacancy
 from api.vacancies.serializers import VacancySerializer
 from api.common.mixins import ActionPermissionMixin
@@ -20,6 +21,7 @@ class VacancyViewSet(ActionPermissionMixin, viewsets.ModelViewSet):
     queryset = Vacancy.objects.all()
     serializer_class = VacancySerializer
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
+    filterset_class = VacancyFilter
     search_fields = ["title", "description"]
 
 

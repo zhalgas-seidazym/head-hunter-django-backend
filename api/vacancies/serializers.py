@@ -4,7 +4,7 @@ from api.skills.models import Skill
 from api.specializations.models import Specialization
 from api.organizations.models import Organization
 from api.locations.models import City
-from api.common.enums import WorkExperience, PaymentFrequency, EmploymentType, WorkFormat, WorkSchedule
+from api.common.enums import WorkExperience, PaymentFrequency, EmploymentType, WorkFormat, WorkSchedule, Currency
 
 
 class VacancySerializer(serializers.ModelSerializer):
@@ -18,6 +18,7 @@ class VacancySerializer(serializers.ModelSerializer):
     employment_type = serializers.ChoiceField(choices=EmploymentType.choices, default=EmploymentType.FULL_TIME)
     work_format = serializers.ChoiceField(choices=WorkFormat.choices, default=WorkFormat.ON_SITE)
     work_schedule = serializers.ChoiceField(choices=WorkSchedule.choices, default=WorkSchedule.FULL_DAY)
+    currency = serializers.ChoiceField(choices=Currency.choices, default=Currency.KZT)
 
     class Meta:
         model = Vacancy
@@ -29,6 +30,7 @@ class VacancySerializer(serializers.ModelSerializer):
             "salary_to",
             "is_salary_gross",
             "payment_frequency",
+            "currency",
             "organization",
             "created_by",
             "city",

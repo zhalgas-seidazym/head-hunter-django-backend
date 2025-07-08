@@ -1,7 +1,7 @@
 from django.db import models
 from django.conf import settings
 
-from api.common.enums import WorkExperience, EmploymentType, WorkSchedule, WorkFormat, PaymentFrequency
+from api.common.enums import WorkExperience, EmploymentType, WorkSchedule, WorkFormat, PaymentFrequency, Currency
 from api.common.models import BaseModel
 from api.locations.models import City
 from api.organizations.models import Organization
@@ -15,6 +15,11 @@ class Vacancy(BaseModel):
 
     salary_from = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     salary_to = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    currency = models.CharField(
+        max_length=10,
+        choices=Currency.choices,
+        default=Currency.KZT
+    )
     is_salary_gross = models.BooleanField(default=True) # without any tax deductions
     payment_frequency = models.CharField(
         max_length=20,
@@ -27,7 +32,7 @@ class Vacancy(BaseModel):
 
     city = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name="vacancies")
 
-    specializations = models.ManyToManyField(Specialization, blank=True, related_name="vacancies")
+    specializations = models.ManyToManyField(Specialization, related_name="vacancies")
     skills = models.ManyToManyField(Skill, blank=True, related_name="vacancies")
     work_experience = models.CharField(
         max_length=20,

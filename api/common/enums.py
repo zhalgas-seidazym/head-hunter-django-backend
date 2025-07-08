@@ -59,3 +59,14 @@ class PaymentFrequency(models.TextChoices):
     QUARTERLY = "QUARTERLY", "Ежеквартально"
     ANNUALLY = "ANNUALLY", "Ежегодно"
     ONE_TIME = "ONE_TIME", "Единовременная выплата"
+
+class Currency(models.TextChoices):
+    KZT = "KZT", "₸ Казахстанский тенге"
+    RUB = "RUB", "₽ Российский рубль"
+    USD = "USD", "$ Доллар США"
+    EUR = "EUR", "€ Евро"
+    GBP = "GBP", "£ Британский фунт"
+    CNY = "CNY", "¥ Китайский юань"
+    TRY = "TRY", "₺ Турецкая лира"
+    AED = "AED", "د.إ Дирхам ОАЭ"
+    UZS = "UZS", "сум Узбекский сум"

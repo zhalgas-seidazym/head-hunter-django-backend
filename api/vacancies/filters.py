@@ -1,6 +1,8 @@
+from random import choices
+
 import django_filters
 
-from api.common.enums import EmploymentType, WorkFormat, WorkSchedule, PaymentFrequency, Currency
+from api.common.enums import EmploymentType, WorkFormat, WorkSchedule, PaymentFrequency, Currency, WorkExperience
 from api.common.filters import MultipleChoiceFilter
 from api.vacancies.models import Vacancy
 
@@ -12,9 +14,9 @@ class VacancyFilter(django_filters.FilterSet):
     currency = django_filters.ChoiceFilter(choices=Currency.choices, field_name="currency")
     organization = django_filters.NumberFilter(field_name="organization")
     city = django_filters.NumberFilter(field_name="city")
-    work_experience = django_filters.CharFilter(field_name="work_experience")
     specializations = django_filters.BaseInFilter(field_name="specializations__id", lookup_expr="in")
 
+    work_experience = MultipleChoiceFilter(choices=WorkExperience.choices)
     employment_type = MultipleChoiceFilter(choices=EmploymentType.choices)
     work_format = MultipleChoiceFilter(choices=WorkFormat.choices)
     work_schedule = MultipleChoiceFilter(choices=WorkSchedule.choices)

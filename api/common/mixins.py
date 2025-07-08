@@ -24,7 +24,7 @@ class ActionSerializerMixin:
 
 
 class ActionPermissionMixin:
-    DEFAULT_PERMISSION_CLASS = permissions.IsAuthenticated
+    DEFAULT_PERMISSION_CLASS = permissions.AllowAny
     permissions = {}
 
     def get_permissions(self):

@@ -88,3 +88,54 @@ class CanManageVacancy(permissions.BasePermission):
             return False
 
         return member.has_role_greater_than(OrganizationRole.VIEWER)
+
+class IsApplicant(permissions.BasePermission):
+    """
+    Разрешает доступ, если user.authenticated и его role == APPLICANT
+    """
+    def has_permission(self, request, view):
+        return (
+            getattr(request.user, "role", None) == Role.APPLICANT
+        )
+
+from rest_framework.permissions import BasePermission
+from api.resumes.models import Resume
+
+
+class IsResumeOwner(BasePermission):
+    """
+    Проверяет, что текущий пользователь владелец резюме.
+
+    Работает с:
+    - Resume (сам объект)
+    - ResumeExperience, ResumeEducation, ResumeCourse (resume — внешний ключ)
+    """
+
+    def has_permission(self, request, view):
+        if view.action == "create":
+            resume_id = request.data.get("resume")
+            if not resume_id:
+                return False
+            try:
+                resume = Resume.objects.get(pk=resume_id)
+            except Resume.DoesNotExist:
+                return False
+            return resume.user_id == request.user.id
+        return True
+
+    def has_object_permission(self, request, view, obj):
+        """
+        Проверка для всех retrieve/update/... действий.
+
+        Поддерживает:
+        - obj == Resume
+        - obj.resume (FK)
+        """
+        if hasattr(obj, "resume"):
+            resume = obj.resume
+        elif isinstance(obj, Resume):
+            resume = obj
+        else:
+            return False
+
+        return resume.user_id == request.user.id

@@ -58,6 +58,30 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'Head Hunter Copy Api',
     'VERSION': '1.0.0',
     "COMPONENT_SPLIT_REQUEST": True,
+    "APPEND_COMPONENTS": {
+        "parameters": {
+            "Page": {
+                "name": "page",
+                "in": "query",
+                "description": "Page number",
+                "required": False,
+                "schema": {
+                    "type": "integer",
+                    "default": 1
+                }
+            },
+            "PageSize": {
+                "name": "page_size",
+                "in": "query",
+                "description": "Number of results per page",
+                "required": False,
+                "schema": {
+                    "type": "integer",
+                    "default": 20
+                }
+            },
+        }
+    }
 }
 
 
@@ -103,6 +127,8 @@ REST_FRAMEWORK = {
         'rest_framework.filters.OrderingFilter',
     ],
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    'DEFAULT_PAGINATION_CLASS': 'api.common.paginations.CustomPageNumberPagination',
+    'PAGE_SIZE': 20,
 }
 
 SIMPLE_JWT = {

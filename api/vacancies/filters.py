@@ -1,6 +1,6 @@
-from random import choices
-
 import django_filters
+from django.db.models import Count, Q
+from django_filters import rest_framework as filters
 
 from api.common.enums import EmploymentType, WorkFormat, WorkSchedule, PaymentFrequency, Currency, WorkExperience
 from api.common.filters import MultipleChoiceFilter
@@ -24,6 +24,24 @@ class VacancyFilter(django_filters.FilterSet):
 
     is_active = django_filters.BooleanFilter(field_name="is_active")
 
+    resume_id = filters.NumberFilter(method="filter_by_resume_skills")
+
     class Meta:
         model = Vacancy
         fields = []
+
+    def filter_by_resume_skills(self, queryset, name, value):
+        from api.resumes.models import Resume
+
+        try:
+            resume = Resume.objects.prefetch_related("skills").get(pk=value)
+        except Resume.DoesNotExist:
+            return queryset.none()
+
+        resume_skill_ids = resume.skills.values_list("id", flat=True)
+
+        queryset = queryset.annotate(
+            matching_skills=Count("skills", filter=Q(skills__in=resume_skill_ids))
+        ).filter(matching_skills__gte=3)
+
+        return queryset

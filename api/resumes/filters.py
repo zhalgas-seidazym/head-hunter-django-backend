@@ -17,6 +17,7 @@ class JSONInOverlapFilter(BaseInFilter):
 
 
 class ResumeFilter(FilterSet):
+    user = NumberFilter(field_name="user", lookup_expr="exact")
     expected_salary_from = NumberFilter(field_name="expected_salary", lookup_expr="gte")
     expected_salary_to = NumberFilter(field_name="expected_salary", lookup_expr="lte")
     currency = CharFilter(field_name="currency")

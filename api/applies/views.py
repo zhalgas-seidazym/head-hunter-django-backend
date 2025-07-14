@@ -1,0 +1,42 @@
+from rest_framework import viewsets, generics, permissions, mixins
+
+from api.applies.models import Apply
+from api.applies.serializers import ApplySerializer, ApplyStatusSerializer
+from api.common.mixins import ActionPermissionMixin, ActionSerializerMixin
+from api.common.permissions import CanManageApply
+
+
+class ApplyViewSet(
+    ActionPermissionMixin,
+    ActionSerializerMixin,
+    mixins.CreateModelMixin,
+    mixins.UpdateModelMixin,
+    mixins.ListModelMixin,
+    mixins.RetrieveModelMixin,
+    viewsets.GenericViewSet
+):
+    serializers = {
+        "create": ApplySerializer,
+        "update": ApplyStatusSerializer,
+        "partial_update": ApplyStatusSerializer,
+        "retrieve": ApplySerializer,
+    }
+    permissions = {
+        "create": [permissions.IsAuthenticated, CanManageApply],
+        "update": [permissions.IsAuthenticated, CanManageApply],
+        "partial_update": [permissions.IsAuthenticated, CanManageApply],
+        "retrieve": [permissions.IsAuthenticated, CanManageApply],
+    }
+    queryset = Apply.objects.all()
+
+    def get_queryset(self):
+        user = self.request.user
+        vacancy_id = self.request.query_params.get('vacancy')
+
+        if self.action == "list":
+            if vacancy_id:
+                return Apply.objects.filter(vacancy__id=vacancy_id)
+            else:
+                return Apply.objects.filter(resume__user=user)
+
+        return Apply.objects.all()

@@ -1,8 +1,11 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import permissions
+from rest_framework.exceptions import PermissionDenied
 
 from api.common.enums import Role, OrganizationRole
 from api.organizations.models import OrganizationMember, Organization
+from api.resumes.models import Resume
+from api.vacancies.models import Vacancy
 
 
 class IsEmployer(permissions.BasePermission):
@@ -98,11 +101,8 @@ class IsApplicant(permissions.BasePermission):
             getattr(request.user, "role", None) == Role.APPLICANT
         )
 
-from rest_framework.permissions import BasePermission
-from api.resumes.models import Resume
 
-
-class IsResumeOwner(BasePermission):
+class IsResumeOwner(permissions.BasePermission):
     """
     Проверяет, что текущий пользователь владелец резюме.
 
@@ -139,3 +139,65 @@ class IsResumeOwner(BasePermission):
             return False
 
         return resume.user_id == request.user.id
+
+
+class CanManageApply(permissions.BasePermission):
+    """
+    Global:
+        EMPLOYER: can create only if belongs to vacancy's organization
+        APPLICANT: can create only with own resume
+    Object-level:
+        EMPLOYER: can act only if belongs to the organization of the apply's vacancy
+        APPLICANT: can act only if owns the resume
+    """
+
+    def has_permission(self, request, view):
+        data = request.data
+        user = request.user
+
+        vacancy_id = data.get('vacancy')
+        resume_id = data.get('resume')
+
+        if user.role == Role.EMPLOYER:
+            if not vacancy_id:
+                raise PermissionDenied("vacancy is required for employers.")
+
+            try:
+                vacancy = Vacancy.objects.select_related('organization').get(id=vacancy_id)
+            except Vacancy.DoesNotExist:
+                raise PermissionDenied("Vacancy not found.")
+
+            if not OrganizationMember.objects.filter(user=user, organization=vacancy.organization).exists():
+                raise PermissionDenied("You are not a member of this organization.")
+
+            return True
+
+        elif user.role == Role.APPLICANT:
+            if not resume_id:
+                raise PermissionDenied("resume is required for applicants.")
+
+            try:
+                resume = Resume.objects.select_related('user').get(id=resume_id)
+            except Resume.DoesNotExist:
+                raise PermissionDenied("Resume not found.")
+
+            if resume.user != user:
+                raise PermissionDenied("You can only apply using your own resume.")
+
+            return True
+
+        raise PermissionDenied("Invalid role for this action.")
+
+    def has_object_permission(self, request, view, obj):
+        user = request.user
+
+        if user.role == Role.EMPLOYER:
+            return OrganizationMember.objects.filter(
+                user=user,
+                organization=obj.vacancy.organization
+            ).exists()
+
+        elif user.role == Role.APPLICANT:
+            return obj.resume.user == user
+
+        return False

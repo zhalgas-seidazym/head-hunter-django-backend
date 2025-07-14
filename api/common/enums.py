@@ -80,3 +80,31 @@ class EducationDegree(models.TextChoices):
     MASTER = "MASTER", "Магистр"
     CANDIDATE_SCIENCE = "CANDIDATE_SCIENCE", "Кандидат наук"
     DOCTOR_SCIENCE = "DOCTOR_SCIENCE", "Доктор наук"
+
+class ApplyStatus(models.TextChoices):
+    APPLIED = 'applied', 'Applied'
+    VIEWED = 'viewed', 'Viewed'
+    IN_PROGRESS = 'in_progress', 'In Progress'
+    INTERVIEW = 'interview', 'Interview Scheduled'
+    OFFER = 'offer', 'Offer Made'
+    REJECTED = 'rejected', 'Rejected'
+    HIRED = 'hired', 'Hired'
+    WITHDRAWN = 'withdrawn', 'Withdrawn by Applicant'
+
+    @classmethod
+    def ordered(cls):
+        return [
+            cls.APPLIED,
+            cls.VIEWED,
+            cls.IN_PROGRESS,
+            cls.INTERVIEW,
+            cls.OFFER,
+            cls.REJECTED,
+            cls.HIRED,
+            cls.WITHDRAWN,
+        ]
+
+class MessageStatus(models.TextChoices):
+    SENT = 'sent', 'Отправлено'
+    DELIVERED = 'delivered', 'Доставлено'
+    READ = 'read', 'Прочитано'

@@ -83,20 +83,6 @@ class MessageSerializer(serializers.ModelSerializer):
             'recipient',
             'status',
             'created_at',
+            'updated_at'
         ]
-        read_only_fields = ['id', 'sender', 'recipient', 'status', 'created_at']
-
-    def create(self, validated_data):
-        user = self.context['request'].user
-        apply = validated_data['apply']
-
-        validated_data['sender'] = user
-
-        if user.role == Role.EMPLOYER:
-            validated_data['recipient'] = apply.resume.user
-        elif user.role == Role.APPLICANT:
-            validated_data['recipient'] = None
-        else:
-            raise serializers.ValidationError("Invalid user role for sending message.")
-
-        return super().create(validated_data)
+        read_only_fields = ['id', 'apply', 'sender', 'recipient', 'status', 'created_at', 'updated_at']

@@ -35,6 +35,7 @@ urlpatterns = [
     path('api/specializations/', include('api.specializations.urls')),
     path('api/vacancies/', include('api.vacancies.urls')),
     path('api/resumes/', include('api.resumes.urls')),
+    path('api/applies/', include('api.applies.urls')),
 
 
     # OpenAPI JSON schema

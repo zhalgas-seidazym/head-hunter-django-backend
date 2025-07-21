@@ -18,12 +18,14 @@ class ApplyViewSet(
     viewsets.GenericViewSet
 ):
     serializers = {
+        "list": ApplySerializer,
         "create": ApplySerializer,
         "update": ApplyStatusSerializer,
         "partial_update": ApplyStatusSerializer,
         "retrieve": ApplySerializer,
     }
     permissions = {
+        "list": [permissions.IsAuthenticated, CanManageApply],
         "create": [permissions.IsAuthenticated, CanManageApply],
         "update": [permissions.IsAuthenticated, CanManageApply],
         "partial_update": [permissions.IsAuthenticated, CanManageApply],

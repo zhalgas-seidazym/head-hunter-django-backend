@@ -1,4 +1,4 @@
-from rest_framework import viewsets, generics, permissions, mixins
+from rest_framework import viewsets, permissions, mixins
 from rest_framework.response import Response
 from drf_spectacular.utils import extend_schema, extend_schema_view
 

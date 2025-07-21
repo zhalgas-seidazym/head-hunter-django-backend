@@ -2,6 +2,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework import permissions
 from rest_framework.exceptions import PermissionDenied
 
+from api.applies.models import Apply
 from api.common.enums import Role, OrganizationRole
 from api.organizations.models import OrganizationMember, Organization
 from api.resumes.models import Resume
@@ -152,37 +153,50 @@ class CanManageApply(permissions.BasePermission):
     """
 
     def has_permission(self, request, view):
-        data = request.data
         user = request.user
+        data = request.data
 
+        apply_id = data.get('apply')
         vacancy_id = data.get('vacancy')
         resume_id = data.get('resume')
 
         if user.role == Role.EMPLOYER:
-            if not vacancy_id:
-                raise PermissionDenied("vacancy is required for employers.")
-
-            try:
-                vacancy = Vacancy.objects.select_related('organization').get(id=vacancy_id)
-            except Vacancy.DoesNotExist:
-                raise PermissionDenied("Vacancy not found.")
+            if apply_id:
+                try:
+                    apply = Apply.objects.select_related('vacancy__organization').get(id=apply_id)
+                    vacancy = apply.vacancy
+                except Apply.DoesNotExist:
+                    raise PermissionDenied("Apply not found.")
+            elif vacancy_id:
+                try:
+                    vacancy = Vacancy.objects.select_related('organization').get(id=vacancy_id)
+                except Vacancy.DoesNotExist:
+                    raise PermissionDenied("Vacancy not found.")
+            else:
+                raise PermissionDenied("vacancy or apply is required for employers.")
 
             if not OrganizationMember.objects.filter(user=user, organization=vacancy.organization).exists():
-                raise PermissionDenied("You are not a member of this organization.")
+                raise PermissionDenied("You are not a member of the organization that owns this vacancy.")
 
             return True
 
         elif user.role == Role.APPLICANT:
-            if not resume_id:
-                raise PermissionDenied("resume is required for applicants.")
-
-            try:
-                resume = Resume.objects.select_related('user').get(id=resume_id)
-            except Resume.DoesNotExist:
-                raise PermissionDenied("Resume not found.")
+            if apply_id:
+                try:
+                    apply = Apply.objects.select_related('resume__user').get(id=apply_id)
+                    resume = apply.resume
+                except Apply.DoesNotExist:
+                    raise PermissionDenied("Apply not found.")
+            elif resume_id:
+                try:
+                    resume = Resume.objects.select_related('user').get(id=resume_id)
+                except Resume.DoesNotExist:
+                    raise PermissionDenied("Resume not found.")
+            else:
+                raise PermissionDenied("resume or apply is required for applicants.")
 
             if resume.user != user:
-                raise PermissionDenied("You can only apply using your own resume.")
+                raise PermissionDenied("You can only apply or send messages using your own resume.")
 
             return True
 

@@ -154,11 +154,10 @@ class CanManageApply(permissions.BasePermission):
 
     def has_permission(self, request, view):
         user = request.user
-        data = request.data
 
-        apply_id = data.get('apply')
-        vacancy_id = data.get('vacancy')
-        resume_id = data.get('resume')
+        apply_id = view.kwargs.get('apply_pk')
+        vacancy_id = request.data.get('vacancy')
+        resume_id = request.data.get('resume')
 
         if user.role == Role.EMPLOYER:
             if apply_id:
@@ -205,13 +204,23 @@ class CanManageApply(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
         user = request.user
 
+        if isinstance(obj, Apply):
+            apply = obj
+        elif hasattr(obj, 'apply'):
+            apply = obj.apply
+        else:
+            return False  # unsupported object
+
+        vacancy = apply.vacancy
+        resume = apply.resume
+
         if user.role == Role.EMPLOYER:
             return OrganizationMember.objects.filter(
                 user=user,
-                organization=obj.vacancy.organization
+                organization=vacancy.organization
             ).exists()
 
         elif user.role == Role.APPLICANT:
-            return obj.resume.user == user
+            return resume.user == user
 
         return False

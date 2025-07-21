@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from .models import Apply
-from ..common.enums import ApplyStatus, Role
+from .models import Apply, Message
+from ..common.enums import ApplyStatus, Role, MessageStatus
 
 
 class ApplySerializer(serializers.ModelSerializer):
@@ -68,3 +68,35 @@ class ApplyStatusSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("You are not allowed to update the status.")
 
         return new_status
+
+
+class MessageSerializer(serializers.ModelSerializer):
+    status = serializers.ChoiceField(choices=MessageStatus.choices, read_only=True)
+
+    class Meta:
+        model = Message
+        fields = [
+            'id',
+            'apply',
+            'text',
+            'sender',
+            'recipient',
+            'status',
+            'created_at',
+        ]
+        read_only_fields = ['id', 'sender', 'recipient', 'status', 'created_at']
+
+    def create(self, validated_data):
+        user = self.context['request'].user
+        apply = validated_data['apply']
+
+        validated_data['sender'] = user
+
+        if user.role == Role.EMPLOYER:
+            validated_data['recipient'] = apply.resume.user
+        elif user.role == Role.APPLICANT:
+            validated_data['recipient'] = None
+        else:
+            raise serializers.ValidationError("Invalid user role for sending message.")
+
+        return super().create(validated_data)

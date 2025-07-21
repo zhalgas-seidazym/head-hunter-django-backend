@@ -106,5 +106,4 @@ class ApplyStatus(models.TextChoices):
 
 class MessageStatus(models.TextChoices):
     SENT = 'sent', 'Отправлено'
-    DELIVERED = 'delivered', 'Доставлено'
     READ = 'read', 'Прочитано'

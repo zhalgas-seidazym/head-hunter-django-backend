@@ -1,5 +1,6 @@
 from rest_framework import viewsets, generics, permissions, mixins
 from rest_framework.response import Response
+from drf_spectacular.utils import extend_schema, extend_schema_view
 
 from api.applies.models import Apply
 from api.applies.serializers import ApplySerializer, ApplyStatusSerializer
@@ -8,6 +9,13 @@ from api.common.mixins import ActionPermissionMixin, ActionSerializerMixin
 from api.common.permissions import CanManageApply
 
 
+@extend_schema_view(
+    list=extend_schema(tags=['Apply'], description='List Apply objects'),
+    create=extend_schema(tags=['Apply'], description='Create Apply objects'),
+    update=extend_schema(tags=['Apply'], description='Update Apply objects'),
+    partial_update=extend_schema(tags=['Apply'], description='Partial Update Apply objects'),
+    retrieve=extend_schema(tags=['Apply'], description='Get Apply objects'),
+)
 class ApplyViewSet(
     ActionPermissionMixin,
     ActionSerializerMixin,

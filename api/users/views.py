@@ -1,4 +1,4 @@
-from rest_framework import viewsets, status
+from rest_framework import viewsets, status, mixins
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
@@ -11,10 +11,11 @@ User = get_user_model()
 
 
 @extend_schema_view(
+    retrieve=extend_schema(tags=["Users"], description="Get user by id."),
     me=extend_schema(tags=["Users"], description="Get, update, delete user."),
     role=extend_schema(tags=["Users"], description="Get user role."),
 )
-class UserViewSet(viewsets.GenericViewSet):
+class UserViewSet(mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]

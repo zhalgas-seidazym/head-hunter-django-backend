@@ -86,3 +86,9 @@ class MessageSerializer(serializers.ModelSerializer):
             'updated_at'
         ]
         read_only_fields = ['id', 'apply', 'sender', 'recipient', 'status', 'created_at', 'updated_at']
+
+
+class UnreadApplySerializer(serializers.Serializer):
+    apply = serializers.PrimaryKeyRelatedField(queryset=Apply.objects.all())
+    unread_count = serializers.IntegerField()
+    latest_message = MessageSerializer()

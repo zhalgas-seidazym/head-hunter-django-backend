@@ -2,7 +2,7 @@ from rest_framework.routers import DefaultRouter
 from rest_framework_nested.routers import NestedDefaultRouter
 from django.urls import path, include
 
-from api.applies.views import ApplyViewSet, MessageViewSet
+from api.applies.views import ApplyViewSet, MessageViewSet, UnreadMessagesSummaryView
 
 router = DefaultRouter()
 router.register(r'applies', ApplyViewSet, basename='apply')
@@ -13,4 +13,5 @@ applies_router.register(r'messages', MessageViewSet, basename='apply-messages')
 urlpatterns = [
     path('', include(router.urls)),
     path('', include(applies_router.urls)),
+    path("applies/messages/unread/", UnreadMessagesSummaryView.as_view(), name="unread-messages-summary"),
 ]
